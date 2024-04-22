@@ -6,19 +6,26 @@ Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https
 
 ## Project Description
  > * Why is it important or interesting to you?
->  * This project is interesting to me because a task manager is something that has a high amount of usage for me, it is something that is helpful in my daily life.
->  * It can help keep on track of all my assignments, appointments and projects, something I will have a use for, while making it will also help me develop mu skillset.
+
+  > This project is interesting to me because a task manager is something that has a high amount of usage for me, it is something that is helpful in my daily life.
+  > It can help keep on track of all my assignments, appointments and projects, something I will have a use for, while making it will also help me develop mu skillset.
+
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
->  * The language will be predominatly c++ and cmake.
->  * A database to store the tasks.
+
+  > The language will be predominatly c++ and cmake.
+  > A database to store the tasks.
+
  > * What will be the input/output of your project?
->  * The inputs will be the dates and times of the tasks, and what priority they hold for the user.
->  * The output will be a notification to the user informing them of their upcoming tasks, and a interface showcasing the tasks.
+
+  > The inputs will be the dates and times of the tasks, and what priority they hold for the user.
+  > The output will be a notification to the user informing them of their upcoming tasks, and a interface showcasing the tasks.
+
  > * What are the features that the project provides?
->  * Storing and removing of tasks from manager.
->  * Set a priority to certain tasks.
->  * Notification system.
->  * Chronological sorting of tasks.
+
+  > Storing and removing of tasks from manager.
+  > Set a priority to certain tasks.
+  > Notification system.
+  > Chronological sorting of tasks.
 
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
