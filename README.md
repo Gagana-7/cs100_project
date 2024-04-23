@@ -7,13 +7,11 @@ Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https
 ## Project Description
  > * Why is it important or interesting to you?
 
-  > This project is interesting to me because a task manager is something that has a high amount of usage for me, it is something that is helpful in my daily life.
-  > It can help keep on track of all my assignments, appointments and projects, something I will have a use for, while making it will also help me develop mu skillset.
+  > This project is interesting to us because a task manager is extremely important and useful in daily life. The task manager can be used to make sure notes and reminders are up to date for any assignments that may need to be completed through the quarter, semester, or even year. In this way we will be able to stay on track and finish any and all assignments while priding ourselves with great time managements skills to allow us to balance our quality of life. In this way we are also able to stay on track with time and work according to a clock which allows us to be more efficient in anything that we intend to accomplish, school or not. 
 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
 
-  > The language will be predominatly c++ and cmake.
-  > A database to store the tasks.
+  > In order to complete these assingments, we as a team are going to use github in order to stay up to date with our project and allow us to collaborate efficiently as group. We will also be using visual studios code in order to code our project efficiently. We will predomininantly be using C++ and Cmake in our code to start off however we could be adding other features which could require us to use other languages as well such as HTML or python. We will also have a database to store tasks. Finally, we will also be using the terminal in order to keep our code up to date with the whole team by pushing and pulling and changes that we have made to github in order to allow other team members to see progress as well. Finally, we will merge the files together to create our final project.
 
  > * What will be the input/output of your project?
 
