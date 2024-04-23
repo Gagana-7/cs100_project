@@ -9,21 +9,24 @@ Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https
 
   > This project is interesting to us because a task manager is extremely important and useful in daily life. The task manager can be used to make sure notes and reminders are up to date for any assignments that may need to be completed through the quarter, semester, or even year. In this way we will be able to stay on track and finish any and all assignments while priding ourselves with great time managements skills to allow us to balance our quality of life. In this way we are also able to stay on track with time and work according to a clock which allows us to be more efficient in anything that we intend to accomplish, school or not. 
 
+
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
 
   > In order to complete these assingments, we as a team are going to use github in order to stay up to date with our project and allow us to collaborate efficiently as group. We will also be using visual studios code in order to code our project efficiently. We will predomininantly be using C++ and Cmake in our code to start off however we could be adding other features which could require us to use other languages as well such as HTML or python. We will also have a database to store tasks. Finally, we will also be using the terminal in order to keep our code up to date with the whole team by pushing and pulling and changes that we have made to github in order to allow other team members to see progress as well. Finally, we will merge the files together to create our final project.
 
+
  > * What will be the input/output of your project?
 
-  > The inputs will be the dates and times of the tasks, and what priority they hold for the user.
-  > The output will be a notification to the user informing them of their upcoming tasks, and a interface showcasing the tasks.
+> In order to create the task, the input would be the task the user is trying to complete and the output would be the task being sucessfully created. The inputs would also be the dates and times of the tasks, and what priority they hold for the user while the output would be setting the tasks in order based on their priority and time. 
+> In order to remove or delete a task, the user would input the completion of the task and the output would be the removal of the task from the task board.
+> In order to see the tasks need to be completed the user would input a command to see the task board and the output would be a notifications to the user informing them of their upcoming tasks, and a interface showcasing the tasks.
+> In order to sort a task based on priority a user will indicate how they want the tasks sorted and the ouput would be the way the user chose to sort the tasks.
+
 
  > * What are the features that the project provides?
 
-  > Storing and removing of tasks from manager.
-  > Set a priority to certain tasks.
-  > Notification system.
-  > Chronological sorting of tasks.
+  > The project features such as storing and removing the tasks using the task manager and various commands. It will allow the user to set the tasks in a priority that the user chooses such as time, importance, etc. The user will be able to see all of the tasks which need to be completed in a display form as either a board view or notification system. The task will be formatted with the utmost importance given based on the user priority preference and chronoligical ordering of the tasks. Users will be able to input the name of the task, the level of prioirty, and due date of the task before officially creating the task.
+
 
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
