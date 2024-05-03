@@ -40,7 +40,7 @@ Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https
  >     * The tasks you are planning for the first sprint
  >     * How work will be divided between the team members
 ## User Interface Specification
- > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from the User Interface Design Document Template of CMSC 345 at the University of Maryland Global Campus)
+
 
 ### Navigation Diagram
 <img width="856" alt="Screen Shot 2024-05-03 at 12 16 18 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/124764989/beacd7c0-ee09-45f2-a05e-f9573c31aefa">
@@ -52,8 +52,7 @@ Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https
 
 
 ## Class Diagram (UML)
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
->
+
 > <img width="536" alt="UMLdiagram" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165207121/99bc592a-fa19-41c3-a585-b4817e04a366">
 
 > Description
