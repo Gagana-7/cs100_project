@@ -56,6 +56,60 @@ Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https
 >
 > <img width="536" alt="UMLdiagram" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165207121/99bc592a-fa19-41c3-a585-b4817e04a366">
 
+> Description
+
+> Class Task : parent class of the other classes that handles the task scheduler.
+> 
+> Private:
+> * Name : a string variable that stores the name of the task.
+> * Priority : an int variable that stores the importance level of a task, ranked from 1-5.
+> * Deadline : a time_t variable, from the ctime library, that stores the due date of the task.
+> * Description : a string type variable that stores an explanation of the task.
+> * Label : a string type variable that allows for the classification of the task into a category.
+> * Duration : a time_t variable, from the ctime library, that stores how long the task will take before being completed.
+>   
+> Public:
+> * getName() : a string fuction that returns the name of a task.
+> * setName(string) : a void fuction that lets the user name a task.
+> * getPriority() : an int function that returns the priority of a task.
+> * setPriority(int) : a void function that gives a task a priority level.
+> * getLabel() : a string function that returns the classification of a task.
+> * setLabel(string) : a void function that creates a classification for a task.
+> * getDeadline() : a time_t function that returns the due date of a task.
+> * setDeadline(time_t) : a void function that creates a deadline for a task.
+> * getDescription() : a string function that returns the description of a task.
+> * setDescription(string) : a void function that creates a description for a task.
+> * getDuration() : a time_t function that returns the length it takes to do a task.
+> * setDuration(time_t) : a void function that creates the duration of a task.
+> * Vector \<string\> vector : a vector initalizer with a string type to store tasks.
+
+> Class SubTask : a class that inherits from Task class, that allows for task lists that can hold smaller tasks.
+> 
+> Public:
+> * createListTasks() : a vector with string type, that acts as a task but being a vector so that it can hold other tasks.
+
+> Class Edit_Task : a class that inherits from Task class, that helps with creating, deleting, and editing parts of the task. It has the ability to keep calling itself to keep editing a task.
+> 
+> Public:
+> * setTask(Name, Priority, Deadline, Description, Duration, Label) : a void function that creates the task with all the inputs from the user.
+> * deleteTask(Name) : a void function that takes the Name of a task and removing it from the vector.
+> * editName() : a void function that renames the task.
+> * editPriority() : a void function that changes the priority level of the task.
+> * editDeadline() : a void function that changes the due date of the task.
+> * editDescription() : a void function that changes the description of the task.
+> * editLabel() : a void function that changes the classification of the task.
+> * editDuration() : a void function that changes how long a task will take to complete.
+
+> Class Sort_Task : a class that inherits from Task class, that sorts the tasks in whatever order the user chooses so that it can be displayed.
+> Public:
+> * sortDeadline() : a void function that sorts the tasks in the vector according to how close their due date is.
+> * sortPriority() : a void function that sorts the tasks in the vector accoridng to their importance level.
+
+> Class Display_Task : a class that inherits from Sort_Task class, that uses the sorts from it to display the tasks in order requested by the user.
+> 
+> Public:
+> * displayDeadline() : a void function that prints the tasks in the order of their due dates.
+> * displayPriority() : a void function that prints the tasks in the order of their importance.
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
