@@ -29,31 +29,30 @@ Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https
 
 
  > ## Phase II
- > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
- > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Break down the "Epics" into smaller actionable user stories (i.e. smaller development tasks). Convert them into issues and assign them to team members. Place these in the `TODO` column (aka Sprint Backlog).
- >   * These cards should represent roughly 7 days worth of development time for your team. Then, once the sprint is over you should be repeating these steps to plan a new sprint, taking you until your second scrum meeting with the reader in phase III.
- > * Schedule two check-ins using Calendly. Both time slots should be during your lab on week 6. Your entire team must be present for both check-ins.
- >   * The first check-in needs to be scheduled with your lab TA. During that meeting, you will discuss your project design/class diagram from phase II.
- >   * The second check-in should be scheduled with a reader. During that meeting you will discuss:
- >     * The tasks you are planning for the first sprint
- >     * How work will be divided between the team members
+
 ## User Interface Specification
 
 
 ### Navigation Diagram
 <img width="856" alt="Screen Shot 2024-05-03 at 12 16 18 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/124764989/beacd7c0-ee09-45f2-a05e-f9573c31aefa">
 
+This is the navigation diagram that we envision. To start off, we have the main display where we introduce our Rangbot task management system. From here, we give the user three options where they can either create a new task, delete a task, display all of their current tasks at once, edit tasks, or quit the system. From the create task, we are able to go back to main display after creating the task to ensure the user is able to give another command after creating the task. From diplay, we are able to to navigate to two different sorting options, priority sort or deadline sort. In this way we are able to sort the tasks based on the user's preference. After displaying the tasks we also once again allow the user to navigate back to the main display to look for further options. Through the edit task system we allow the user to edit any task that they previously made a mistake on or if a date has been changed. Again, from the edit task bar we allow the user to go straight back to the main display. From the delete task section, it is the same in that the user is able to delete a certain task then go back to the main display. Finally, we have the quit function which terminates the program and saves whatever tasks need to be saved. We are still figuring out the display of the quit program but for now we might simply terminate the program and see where to go from there. 
+
+
 ### Screen Layouts
+
 <img width="687" alt="Screenshot 2024-05-03 at 12 51 39 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/3ea0cd85-9c78-424d-8919-ca14d9877164">
-
 <img width="696" alt="Screenshot 2024-05-03 at 12 52 25 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/a27be46d-ee24-4c1e-aa12-c14cc98a866f">
+<img width="746" alt="Screenshot 2024-05-05 at 11 26 43 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/d3b5da52-918a-4afc-93ba-b4df89597f53">
 
+For the screen layout we decided to create different displays based on the section of the program; each display is under the title 
+---nameofdisplay--. As of now we assume that the words will be formed with a proper background of our choosing. As of now the layout of our program is undecided but will most likely follow the idea of text on top of a background that is engaging and user friendly. Display task starts of by asking the user to choose a particular sorting method, deadline or priority. Then the tasks are displayed in the user that the order chooses. The create task display asks the user to input information such as title, deadline, priority, and description (of the task if need). The delete task option simply asks the user for the name of the task meant to be deleted and deletes the task automatically once the name is entered. Finally, the quit function ouputs a message reminding the to complete their tasks. As of now the quit function can be left, but as a group we do want to change it to something more enticing which we will figure out through the proccess. 
 
 ## Class Diagram (UML)
 
 > <img width="536" alt="UMLdiagram" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165207121/99bc592a-fa19-41c3-a585-b4817e04a366">
+
+Below is the description for all the functions of the UML diagram we start off with the task class which is the biggest class with most of the variables under. From here, all the other functions such as sort, display, edit, are children of the task class and inherit the function from the parent class as well. In each of these children classes we will override the parent task class function definitions as we see fit, however as of now we are not sure which functions will need the override and which ones would not. 
 
 > Description
 
