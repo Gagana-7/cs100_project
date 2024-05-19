@@ -50,7 +50,7 @@ For the screen layout we decided to create different displays based on the secti
 
 ## Class Diagram (UML)
 
-> <img width="536" alt="UMLdiagram" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165207121/99bc592a-fa19-41c3-a585-b4817e04a366">
+> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/e4c171d8-ac16-4e2e-bd9c-6bb15633ce72)
 
 Below is the description for all the functions of the UML diagram we start off with the task class which is the biggest class with most of the variables under. From here, all the other functions such as sort, display, edit, are children of the task class and inherit the function from the parent class as well. In each of these children classes we will override the parent task class function definitions as we see fit, however as of now we are not sure which functions will need the override and which ones would not. 
 
