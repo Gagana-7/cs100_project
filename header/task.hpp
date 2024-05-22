@@ -33,7 +33,6 @@ class Task {
         std::string getDescription() const;
         std::string getLabel() const;
         double getDuration() const;
-        vector<Task> getTaskList() const;
         bool getCompleted() const;
 
 };
