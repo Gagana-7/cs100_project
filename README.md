@@ -110,10 +110,8 @@ Below is the description for all the functions of the UML diagram we start off w
 > * displayPriority() : a void function that prints the tasks in the order of their importance.
  
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
+
+ Updated Class UML Diagram:
  
 >  Single Responsibility Principle: For our first update to the SOLID principles in the UML diagram we seperate the EDIT task class into Create, Delete and Edit Task classes. In this way we are shifting responsibilites so that each class is only responsble for one aspect of the task manager program. This helps us format our code and determine which part of our code needs to be fixed more efficiently.
          > create task helps to only create the task and create the constructor
@@ -125,15 +123,6 @@ Below is the description for all the functions of the UML diagram we start off w
 
 > Interface Segregation Principle: In this case, since we are implmenting a driver class which only the user has to interfere with, we are able to segregate the interface the user has to deal with into one class while the programmers worry about back end issues. In this way clients will not be forced to interact with interfaces they they do not understand. Also, if there is any problem in the fucntionality from the clients and we will be able to more accurately see where the issues are in our code.
 
-
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
 
  
  > ## Final deliverable
