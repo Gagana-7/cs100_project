@@ -3,7 +3,7 @@ using namespace std;
 
 #include "Task.hpp"
 
-
+//created and initialized the constructor 
 createTask(){
     name = "Unititled";
     label = "No label";
@@ -13,7 +13,7 @@ createTask(){
     completed = false; 
     deadline = "No deadline";
 }
-
+//initializing variables with parameters 
  createTask(const string &deadline, int priority, double duration, const string &label, const string &name, const string &description){
     this-> deadline  = deadline;
     this->priority = priority;
