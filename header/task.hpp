@@ -4,16 +4,18 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 class Task {
     private:
         bool completed;
-        std::string name;
+        string name;
         int priority;
-        std::string deadline;
-        std::string description;
-        std::string label;
+        string deadline;
+        string description;
+        string label;
         double duration;
-        std::vector<std::string> taskList;
+        vector<string> taskList;
         
     public:
 
@@ -24,14 +26,14 @@ class Task {
         void setDescription(const std::string& description);
         void setLabel(const std::string& label);
         void setDuration(double duration);
-        void addTask(const std::string& taskList);
+        void addTask(const string& taskList);
 
         //getters
-        std::string getName() const;
+        string getName() const;
         int getPriority() const;
-        std::string getDeadline() const;
-        std::string getDescription() const;
-        std::string getLabel() const;
+        string getDeadline() const;
+        string getDescription() const;
+        string getLabel() const;
         double getDuration() const;
         vector<Task> getTaskList() const;
         bool getCompleted() const;
