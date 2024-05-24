@@ -1,4 +1,4 @@
-#include "../include/task.hpp"
+#include "task.hpp"
 
 void Task::setName(const std::string& name) {
     this->name = name;
@@ -24,8 +24,12 @@ void Task::setDuration(double duration) {
     this->duration = duration;
 }
 
-void Task::addTask(const std::string& newTask) { 
-    taskList = newTask;
+void Task::setCompleted(bool completed) {
+    this->completed = completed;
+}
+
+void Task::addTask(const Task& newTask) { 
+    taskList.push_back(newTask);
 }
 
 bool Task::getCompleted() const {
@@ -54,4 +58,8 @@ std::string Task::getLabel() const {
 
 double Task::getDuration() const {
     return duration;
+}
+
+std::vector<Task> Task::getTaskList() const {
+    return taskList;
 }
