@@ -13,7 +13,7 @@ class Task {
         std::string description;
         std::string label;
         double duration;
-        std::vector<std::string> taskList;
+        std::vector<Task> taskList;
         
     public:
 
@@ -24,7 +24,8 @@ class Task {
         void setDescription(const std::string& description);
         void setLabel(const std::string& label);
         void setDuration(double duration);
-        void addTask(const std::string& taskList);
+        void setCompleted(bool completed);
+        void addTask(const Task& taskList);
 
         //getters
         std::string getName() const;
@@ -33,7 +34,7 @@ class Task {
         std::string getDescription() const;
         std::string getLabel() const;
         double getDuration() const;
-        vector<Task> getTaskList() const;
+        std::vector<Task> getTaskList() const;
         bool getCompleted() const;
 
 };
