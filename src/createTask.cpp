@@ -13,6 +13,7 @@ createTask(){
     completed = false; 
     deadline = "No deadline";
 }
+
 //initializing variables with parameters 
  createTask(const string &deadline, int priority, double duration, const string &label, const string &name, const string &description){
     this-> deadline  = deadline;
