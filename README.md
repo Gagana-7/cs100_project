@@ -113,8 +113,8 @@ Below is the description for all the functions of the UML diagram we start off w
 
  Updated Class UML Diagram:
 
-> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/2ec8a4b9-ce12-4518-8f77-645c72ce4bc8)
- 
+> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/8425f508-3126-4a36-acb0-88a44030ffa0)
+
 >  Single Responsibility Principle: For our first update to the SOLID principles in the UML diagram we seperate the EDIT task class into Create, Delete and Edit Task classes. In this way we are shifting responsibilites so that each class is only responsble for one aspect of the task manager program. This helps us format our code and determine which part of our code needs to be fixed more efficiently.
          > create task helps to only create the task and create the constructor
          > delete taks helps to only delete tht tasks and create the destructor 
