@@ -50,7 +50,7 @@ For the screen layout we decided to create different displays based on the secti
 
 ## Class Diagram (UML)
 
-> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/e4c171d8-ac16-4e2e-bd9c-6bb15633ce72)
+> <img width="536" alt="Screenshot_2024-05-03_at_12 28 26_PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/65ed6716-da77-41f4-ace7-5854a7283055">
 
 Below is the description for all the functions of the UML diagram we start off with the task class which is the biggest class with most of the variables under. From here, all the other functions such as sort, display, edit, are children of the task class and inherit the function from the parent class as well. In each of these children classes we will override the parent task class function definitions as we see fit, however as of now we are not sure which functions will need the override and which ones would not. 
 
@@ -110,24 +110,21 @@ Below is the description for all the functions of the UML diagram we start off w
 > * displayPriority() : a void function that prints the tasks in the order of their importance.
  
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
+
+ Updated Class UML Diagram:
+
+> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/2ec8a4b9-ce12-4518-8f77-645c72ce4bc8)
  
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
- >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply?
- >     * How did you apply it? i.e. describe the change.
- >     * How did this change help you write better code?
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
+>  Single Responsibility Principle: For our first update to the SOLID principles in the UML diagram we seperate the EDIT task class into Create, Delete and Edit Task classes. In this way we are shifting responsibilites so that each class is only responsble for one aspect of the task manager program. This helps us format our code and determine which part of our code needs to be fixed more efficiently.
+         > create task helps to only create the task and create the constructor
+         > delete taks helps to only delete tht tasks and create the destructor 
+
+> Single Responsibility Principle: We also created a fileTask class to write and save our files (tasks) more efficiently in one space. In this way we are shifting the entirely of the file applications into one of our programs. This allows us to keep our code clean and see the errors in our file applications all in one file rather than it being scattered among multiple different files that we have to rummage through to find.
+
+> Open-Closed Principle: We created our Task.cpp class which is a class that will not be modified in anyway since it will just be used for function calls in other classes. If anything the class will only be extend for more functions that might need to be used throughout the code. In this way we can inherit most of these function from the class while the class will not be modified in any way which follows the open-closed principle.
+
+> Interface Segregation Principle: In this case, since we are implmenting a driver class which only the user has to interfere with, we are able to segregate the interface the user has to deal with into one class while the programmers worry about back end issues. In this way clients will not be forced to interact with interfaces they they do not understand. Also, if there is any problem in the fucntionality from the clients and we will be able to more accurately see where the issues are in our code.
+
 
  
  > ## Final deliverable

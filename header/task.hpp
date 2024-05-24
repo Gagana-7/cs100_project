@@ -34,7 +34,6 @@ class Task {
         std::string getDescription() const;
         std::string getLabel() const;
         double getDuration() const;
-        std::vector<Task> getTaskList() const;
         bool getCompleted() const;
 
 };
