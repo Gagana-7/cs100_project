@@ -117,7 +117,9 @@ Below is the description for all the functions of the UML diagram we start off w
 
 >  Single Responsibility Principle: For our first update to the SOLID principles in the UML diagram we seperate the EDIT task class into Create, Delete and Edit Task classes. In this way we are shifting responsibilites so that each class is only responsble for one aspect of the task manager program. This helps us format our code and determine which part of our code needs to be fixed more efficiently.
          > create task helps to only create the task and create the constructor
-         > delete taks helps to only delete tht tasks and create the destructor 
+         > delete taks helps to only delete tht tasks and create the destructor
+
+> Single Responsibility Principle: We seperated the two sorting task class into two different classes, Priority sort and Deadine sort. In this way we are ablke to simplify each sorting fucntion to one class which further simplifies the single responsibility principle.
 
 > Single Responsibility Principle: We also created a fileTask class to write and save our files (tasks) more efficiently in one space. In this way we are shifting the entirely of the file applications into one of our programs. This allows us to keep our code clean and see the errors in our file applications all in one file rather than it being scattered among multiple different files that we have to rummage through to find.
 
