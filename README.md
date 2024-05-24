@@ -50,7 +50,7 @@ For the screen layout we decided to create different displays based on the secti
 
 ## Class Diagram (UML)
 
-> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/e4c171d8-ac16-4e2e-bd9c-6bb15633ce72)
+> <img width="536" alt="Screenshot_2024-05-03_at_12 28 26_PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/65ed6716-da77-41f4-ace7-5854a7283055">
 
 Below is the description for all the functions of the UML diagram we start off with the task class which is the biggest class with most of the variables under. From here, all the other functions such as sort, display, edit, are children of the task class and inherit the function from the parent class as well. In each of these children classes we will override the parent task class function definitions as we see fit, however as of now we are not sure which functions will need the override and which ones would not. 
 
@@ -113,7 +113,7 @@ Below is the description for all the functions of the UML diagram we start off w
 
  Updated Class UML Diagram:
 
-> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/41179ce4-7dc4-46f4-8b91-75ac4bd811f2)
+> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/2ec8a4b9-ce12-4518-8f77-645c72ce4bc8)
  
 >  Single Responsibility Principle: For our first update to the SOLID principles in the UML diagram we seperate the EDIT task class into Create, Delete and Edit Task classes. In this way we are shifting responsibilites so that each class is only responsble for one aspect of the task manager program. This helps us format our code and determine which part of our code needs to be fixed more efficiently.
          > create task helps to only create the task and create the constructor
