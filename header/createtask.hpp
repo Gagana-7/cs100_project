@@ -1,10 +1,10 @@
-#include <iostream>
-using namespace std;
-
 #ifndef CREATETASK_HPP
 #define CREATETASK_HPP
 
-class CreateTask :: public Task {
+#include <iostream>
+using namespace std;
+
+class CreateTask : public Task {
 public:
     // Constructor
    void createTask();
