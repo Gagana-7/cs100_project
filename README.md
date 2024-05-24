@@ -115,6 +115,83 @@ Below is the description for all the functions of the UML diagram we start off w
 
 > ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/8425f508-3126-4a36-acb0-88a44030ffa0)
 
+> Description
+
+> Class Task : parent class of the other classes that handles the task scheduler.
+> 
+> Private:
+> * Name : a string variable that stores the name of the task.
+> * Priority : an int variable that stores the importance level of a task, ranked from 1-5.
+> * Deadline : a string variable, that stores the due date of the task.
+> * Description : a string type variable that stores an explanation of the task.
+> * Label : a string type variable that allows for the classification of the task into a category.
+> * Duration : a double variable, that stores how long the task will take before being completed.
+>   
+> Public:
+> * getName() : a string fuction that returns the name of a task.
+> * setName(string) : a void fuction that lets the user name a task.
+> * getPriority() : an int function that returns the priority of a task.
+> * setPriority(int) : a void function that gives a task a priority level.
+> * getLabel() : a string function that returns the classification of a task.
+> * setLabel(string) : a void function that creates a classification for a task.
+> * getDeadline() : a string function that returns the due date of a task.
+> * setDeadline(string) : a void function that creates a deadline for a task.
+> * getDescription() : a string function that returns the description of a task.
+> * setDescription(string) : a void function that creates a description for a task.
+> * getDuration() : a double function that returns the length it takes to do a task.
+> * setDuration(double) : a void function that creates the duration of a task.
+> * Vector \<Task\> vector : a vector initalizer with a string type to store tasks.
+
+> Class SubTask : a class that inherits from Task class, that allows for task lists that can hold smaller tasks.
+> 
+> Public:
+> * createListTasks() : a vector with string type, that acts as a task but being a vector so that it can hold other tasks.
+
+> Class Edit_Task : a class that inherits from Task class, that helps with creating, deleting, and editing parts of the task. It has the ability to keep calling itself to keep editing a task.
+> 
+> Public:
+> * editName() : a void function that renames the task.
+> * editPriority() : a void function that changes the priority level of the task.
+> * editDeadline() : a void function that changes the due date of the task.
+> * editDescription() : a void function that changes the description of the task.
+> * editLabel() : a void function that changes the classification of the task.
+> * editDuration() : a void function that changes how long a task will take to complete.
+
+> Class Create_Task :
+>
+> Public:
+> * Task() : Initializes a default task object.
+> * Task(string, int, string, string, string, string, double) : Initializes a task object with given parameters.
+
+> Class Delete_Task :
+>
+> Public:
+> * ~Task() : Destructor for Task class. 
+
+> Class driverTask :
+>
+> public:
+> * makeTask() : Prompts the user for a Task, which then calls the createTask class with the user inputed values.
+> * deleteTask() : Deletes a user-specified task. The deleteTask class will be called. 
+> * editTask() : Edits a task from a given user input, which will also ask for the changes to be made. 
+> * displayTask() : Displays the list of all user-created tasks sorted by user specification. 
+
+> Class Priority_Sort : a class that inherits from Task class, that sorts the tasks in whatever order the user chooses so that it can be displayed.
+> Public:
+> * sortPriority() : a void function that sorts the tasks in the vector according to their importance level.
+
+> Class Deadline_Sort :
+> Public:
+> * sortDeadline() : a void function that sorts the tasks in the vector according to how close their due date is.
+
+>
+
+> Class Display_Task : a class that inherits from Sort_Task class, that uses the sorts from it to display the tasks in order requested by the user.
+> 
+> Public:
+> * displayDeadline() : a void function that prints the tasks in the order of their due dates.
+> * displayPriority() : a void function that prints the tasks in the order of their importance.
+
 >  Single Responsibility Principle: For our first update to the SOLID principles in the UML diagram we seperate the EDIT task class into Create, Delete and Edit Task classes. In this way we are shifting responsibilites so that each class is only responsble for one aspect of the task manager program. This helps us format our code and determine which part of our code needs to be fixed more efficiently.
          > create task helps to only create the task and create the constructor
          > delete taks helps to only delete tht tasks and create the destructor
