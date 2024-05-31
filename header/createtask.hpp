@@ -2,6 +2,7 @@
 #define CREATETASK_HPP
 
 #include <iostream>
+#include "task.hpp"
 using namespace std;
 
 class CreateTask : public Task {
