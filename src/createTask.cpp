@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 
-#include "Task.hpp"
+#include "../header/task.hpp"
+#include "../header/createtask.hpp"
 
 //created and initialized the constructor 
-createTask(){
+CreateTask::createTask(){
     name = "Unititled";
     label = "No label";
     description = "No description"
@@ -15,7 +16,7 @@ createTask(){
 }
 
 //initializing variables with parameters 
- createTask(const string &deadline, int priority, double duration, const string &label, const string &name, const string &description){
+ CreateTask::createTask(const string &deadline, int priority, double duration, const string &label, const string &name, const string &description){
     this-> deadline  = deadline;
     this->priority = priority;
     this->duration = duration;

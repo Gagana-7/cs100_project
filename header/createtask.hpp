@@ -1,9 +1,9 @@
+#ifndef CREATETASK_HPP
+#define CREATETASK_HPP
+
 #include <iostream>
 #include "task.hpp"
 using namespace std;
-
-#ifndef CREATETASK_HPP
-#define CREATETASK_HPP
 
 class CreateTask : public Task {
 public:
