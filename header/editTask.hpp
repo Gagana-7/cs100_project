@@ -13,7 +13,6 @@ class editTask {
         void editDescription(string description);
         void editLabel(string label);
         void editDuration(double duration);
-
         void markAsComplete();
 };
 
