@@ -16,12 +16,12 @@ void editTask::editDescription(string new_description) {
     this->description = new_description;
 }
 
-void editTask::editLabel(string new_label) {
-    this->label = new_label;
-}
-
 void editTask::editDuration(double new_duration) {
     this->duration = new_duration;
+}
+
+void editTask::editLabel(string new_label) {
+    this->label = new_label;
 }
 
 void editTask::markAsComplete() {

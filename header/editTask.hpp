@@ -11,8 +11,8 @@ class editTask {
         void editPriority(int priority);
         void editDeadline(string deadline);
         void editDescription(string description);
-        void editLabel(string label);
         void editDuration(double duration);
+         void editLabel(string label);
 
         void markAsComplete();
 };

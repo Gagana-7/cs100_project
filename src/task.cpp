@@ -16,12 +16,12 @@ void Task::setDescription(const string& description) {
     this->description = description;
 }
 
-void Task::setLabel(const string& label) {
-    this->label = label;
-}
-
 void Task::setDuration(double duration) {
     this->duration = duration;
+}
+
+void Task::setLabel(const string& label) {
+    this->label = label;
 }
 
 void Task::setCompleted(bool completed) {
@@ -32,9 +32,6 @@ void Task::addTask(const Task& newTask) {
     taskList.push_back(newTask);
 }
 
-bool Task::getCompleted() const {
-    return completed;
-}
 
 string Task::getName() const {
     return name;
@@ -52,14 +49,18 @@ string Task::getDescription() const {
     return description;
 }
 
-string Task::getLabel() const {
-    return label;
-}
-
 double Task::getDuration() const {
     return duration;
 }
 
+string Task::getLabel() const {
+    return label;
+}
+
 vector<Task> Task::getTaskList() const {
     return taskList;
+}
+
+bool Task::getCompleted() const {
+    return completed;
 }

@@ -7,20 +7,23 @@ using namespace std;
 //created and initialized the constructor 
 CreateTask::createTask(){
     name = "Unititled";
-    label = "No label";
-    description = "No description"
     priority = 0;
-    duration = 0;
-    completed = false; 
     deadline = "No deadline";
+    description = "No description"
+    duration = 0;
+    label = "No label";
+    completed = false; 
 }
 
 //initializing variables with parameters 
- CreateTask::createTask(const string &deadline, int priority, double duration, const string &label, const string &name, const string &description){
-    this-> deadline  = deadline;
+ CreateTask::createTask(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label, ){
+    this->name = name;
     this->priority = priority;
+    this-> deadline  = deadline;
+    this->description = description;
     this->duration = duration;
     this->label = label;
-    this->name = name;
+    this->completed = false
+    
  }
 
