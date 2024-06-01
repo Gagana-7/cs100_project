@@ -24,8 +24,8 @@ class Task {
         void setPriority(int priority);
         void setDeadline(const std::string deadline);
         void setDescription(const std::string& description);
-        void setLabel(const std::string& label);
         void setDuration(double duration);
+        void setLabel(const std::string& label);
         void setCompleted(bool completed);
         void addTask(const Task& taskList);
 
@@ -34,8 +34,8 @@ class Task {
         int getPriority() const;
         string getDeadline() const;
         string getDescription() const;
-        string getLabel() const;
         double getDuration() const;
+        string getLabel() const;
         bool getCompleted() const;
 
 };
