@@ -12,8 +12,7 @@ class editTask {
         void editDeadline(string deadline);
         void editDescription(string description);
         void editDuration(double duration);
-         void editLabel(string label);
-
+        void editLabel(string label);
         void markAsComplete();
 };
 
