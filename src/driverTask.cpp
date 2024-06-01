@@ -1,16 +1,46 @@
 #include "../header/driverTask.hpp"
 
-void DriverTask::editTaskDriver(Task &task, int choice) {
-    while(true) {
-        cout << "Choose one of the following to edit:" << endl;
-        cout << "Name: press 1" << endl;
-        cout << "Prority: press 2" << endl;
-        cout << "Deadline: press 3" << endl;
-        cout << "Description: press 4" << endl;
-        cout << "Duration: press 5" << endl;
-        cout << "Label: press 6" << endl;
-        cout << "Mark as complete: press 7" << endl;
+void DriverTask::editTaskDriver(Task &task, int edit_choice, const string& user_input) {
+    switch (edit_choice) {
+        case 1:
+            task.editName(user_input);
+            break;
+        case 3:
+            task.editDeadline(user_input);
+            break;
+        case 4:
+            task.editDescription(user_input);
+            break;
+        case 6:
+            task.editLabel(user_input);
+            break;
+        case 7:
+            task.markAsComplete();
+            break;
+        default:
+            cout << "Invalid choice" << endl;
+            break;
+    }
+}
 
-        cin >> 
+void DriverTask::editTaskDriver(Task &task, int edit_choice, int user_input) {
+    switch (edit_choice) {
+        case 2:
+            task.editPriority(user_input);
+            break;
+        default:
+            cout << "Invalid choice" << endl;
+            break;
+    }
+}
+
+void DriverTask::editTaskDriver(Task &task, int edit_choice, double user_input) {
+    switch (edit_choice) {
+        case 5:
+            task.editDuration(user_input);
+            break;
+        default:
+            cout << "Invalid choice" << endl;
+            break;
     }
 }
