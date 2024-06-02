@@ -1,13 +1,13 @@
 #include "../header/driverTask.hpp"
 #include "../header/task.hpp"
 
-Task findTaskbyName(const string &name, vector<Task> &taskList) {
+Task* findTaskbyName(const string &name, vector<Task> &taskList) {
     for (int i = 0; i < taskList.size(); i++) {
         if (taskList.at(i).getName() == name) {
-            return taskList.at(i);
+            return &taskList.at(i);
         }
     }
-    return Task();
+    return nullptr;
 }
 
 int main() {
@@ -60,7 +60,7 @@ int main() {
             cout << "Give your task a label (ex: school, work, etc)" << endl;
             getline(cin, tasklabel);
 
-            driver.createTaskDriver(taskname, taskpriority, taskdeadline, taskdescription, taskduration, tasklabel);
+            driver.createTaskDriver(taskname, taskpriority, taskdeadline, taskdescription, taskduration, tasklabel, taskList);
 
         }
         else if(user_choice == 2) {
@@ -83,17 +83,21 @@ int main() {
                     cout << "Label: press 6" << endl;
                     cout << "Mark as complete: press 7" << endl;
                     cin >> edit_choice;
+                    cin.ignore();
                     if (edit_choice == 1 || edit_choice == 3 || edit_choice == 4 || edit_choice == 6 || edit_choice == 7) {
+                        cout << "Enter new value" << endl;
                         string user_input_str;
                         getline(cin, user_input_str);
                         driver.editTaskDriver(*task, edit_choice, user_input_str);
                     }
                     else if(edit_choice == 2){
+                        cout << "Enter new value" << endl;
                         int user_input_int;
                         cin >> user_input_int;
                         driver.editTaskDriver(*task, edit_choice, user_input_int);
                     }
                     else if(edit_choice == 5) {
+                        cout << "Enter new value" << endl;
                         double user_input_double;
                         cin >> user_input_double;
                         driver.editTaskDriver(*task, edit_choice, user_input_double);
