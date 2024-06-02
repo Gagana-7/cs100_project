@@ -1,7 +1,7 @@
-#include "../include/display.h"
-#include "../include/Task.h"
-#include "../include/PrioritysortTask.h"
-#include "../include/deadlineSortTask.h"
+#include "../header/display.h"
+#include "../header/Task.hpp"
+#include "../header/PrioritysortTask.hpp"
+#include "../header/deadlineSortTask.hpp"
 #include <iostream>
 using namespace std;
 

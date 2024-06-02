@@ -48,12 +48,12 @@ void DriverTask::editTaskDriver(Task &task, int edit_choice, double user_input) 
     }
 }
 
-void deleteTaskDriver(const string &name, vector<Task> &taskList) {
+void DriverTask::deleteTaskDriver(const string &name, vector<Task> &taskList) {
     DeleteTask deleter;
     deleter.DeleteByName(taskList, name);
 }
 
-void deleteTaskDriver(vector<Task> &taskList) {
+void DriverTask::deleteTaskDriver(vector<Task> &taskList) {
     DeleteTask deleter;
     deleter.DeleteWhenDone(taskList);
 }

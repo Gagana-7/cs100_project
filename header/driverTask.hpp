@@ -4,7 +4,7 @@
 #include "task.hpp"
 #include "createtask.hpp"
 #include "editTask.hpp"
-#include "deleteTask.h"
+#include "deleteTask.hpp"
 #include "display.hpp"
 
 #include <iostream>
