@@ -15,6 +15,7 @@ Task* findTaskbyName(const std::string& name) {
 
 int main() {
 
+    vector <Task> taskList;
     DriverTask driver;
     int user_choice;
 
