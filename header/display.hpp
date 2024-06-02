@@ -1,5 +1,6 @@
-#ifndef TASKDISPLAY_HPP
-#define TASKDISPLAY_HPP
+
+#ifndef TASKDISPLAY_H
+#define TASKDISPLAY_H
 #include "task.hpp"
 #include "PrioritysortTask.hpp"
 #include "deadlineSortTask.hpp"

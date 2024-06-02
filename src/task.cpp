@@ -1,4 +1,4 @@
-#include "task.hpp"
+#include "../header/task.hpp"
 
 void Task::setName(const string& name) {
     this->name = name;
@@ -32,7 +32,6 @@ void Task::addTask(const Task& newTask) {
     taskList.push_back(newTask);
 }
 
-
 string Task::getName() const {
     return name;
 }
@@ -57,7 +56,7 @@ string Task::getLabel() const {
     return label;
 }
 
-vector<Task> Task::getTaskList() const {
+const vector<Task>& Task::getTaskList() const {
     return taskList;
 }
 
