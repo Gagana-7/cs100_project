@@ -1,4 +1,17 @@
 #include "../header/driverTask.hpp"
+#include "../header/task.hpp"
+
+Task* findTaskbyName(const std::string& name) {
+    Task task; 
+    const vector<Task>& taskList = task.getTaskList();
+
+    for (const Task& task : taskList) {
+        if (task.getName() == name) {
+            return const_cast<Task*>(&task);
+        }
+    }
+    return nullptr;
+}
 
 int main() {
 
@@ -33,6 +46,7 @@ int main() {
             while(true) {
 
                 int edit_choice;
+                string name;
                 cout << "Enter the name of the task you wish to edit" << endl;
                 getline(cin, name);
 
@@ -75,12 +89,5 @@ int main() {
     }
 }
 
-Task* findTaskbyName(const string& name) {
-    for (Task& task : taskList) {
-        if (task.getName() == name) {
-            return &task;
-        }
-    }
-    return nullptr;
-}
+
 

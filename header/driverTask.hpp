@@ -12,7 +12,10 @@ using namespace std;
 
 class DriverTask {
     public:
-        void editTaskDriver(Task &task);
+        void editTaskDriver(Task &task, int choice, const string& user_choice);
+        void editTaskDriver(Task &task, int choice, int user_choice);
+        void editTaskDriver(Task &task, int choice, double user_choice);
+        Task* findTaskbyName(const string& name);
 };
 
 #endif //DRIVERTASK_HPP
