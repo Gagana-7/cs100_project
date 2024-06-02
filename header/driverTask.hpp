@@ -15,7 +15,8 @@ class DriverTask {
         void editTaskDriver(Task &task, int choice, const string& user_choice);
         void editTaskDriver(Task &task, int choice, int user_choice);
         void editTaskDriver(Task &task, int choice, double user_choice);
-        Task* findTaskbyName(const string& name);
+        void deleteTaskDriver(const string &name, vector<Task> &taskList); 
+        void deleteTaskDriver(vector<Task> &taskList);
 };
 
 #endif //DRIVERTASK_HPP
