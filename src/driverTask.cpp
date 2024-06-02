@@ -61,3 +61,15 @@ void DriverTask::createTaskDriver (const string &name, int priority, const strin
         CreateTask createList;
         taskList.push_back(createList.CreateTasks(name, priority, deadline, description, duration, label));
 }
+
+ void DriverTask::saveFileDriver(const string &fileName, const vector<Task> &taskList) {
+    taskFile saveFile;
+    saveFile.setFileName(fileName);
+    saveFile.writeFile(taskList);
+ }
+
+  void DriverTask::loadFileDriver(const string &fileName, vector<Task> &taskList) {
+    taskFile loadFile;
+    loadFile.setFileName(fileName);
+    loadFile.readFile(taskList);
+ }

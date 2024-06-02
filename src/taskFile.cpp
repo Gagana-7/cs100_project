@@ -1,10 +1,10 @@
-#include "taskFile.hpp"
+#include "../header/taskFile.hpp"
 
 void taskFile::setFileName(string name) {
     fileName = name;
 }
 
-void taskFile::writeFile(vector<Task>& tasks) {
+void taskFile::writeFile(const vector<Task>& tasks) {
     ofstream myFile (fileName);
     if (myFile.is_open()) {
         for (int i = 0; i < tasks.size(); i++) {
@@ -36,7 +36,7 @@ void taskFile::readFile(vector<Task>& tasks) {
     if (myFile.is_open()) {
         while (getline(myFile, line)) {
             if (line.empty()) {
-                tasks.at(i) = newTask;
+                tasks.push_back(newTask);
                 i++;
                 j = 0;
             } else {

@@ -15,7 +15,7 @@ int main() {
     vector <Task> taskList;
     DriverTask driver;
     int user_choice;
-
+    driver.loadFileDriver("myFile.txt", taskList);
     cout << " Do you have lots of things to do? Do you not know how to manage your time? All those worries will go away now!" << endl; 
     cout << "Welcome to RANGBOT, your own personal task management system!" << endl;
 
@@ -35,6 +35,8 @@ int main() {
         if (user_choice == 0) {
             cout << "Have a good day" << endl;
             //save file
+            driver.saveFileDriver("myFile.txt", taskList);
+
             break;
         }
         else if (user_choice == 1) {
@@ -136,6 +138,14 @@ int main() {
             else {
                 cout << "Invalid choice." << endl;
             }
+        } 
+        else if (user_choice == 4) {
+            //display
+        } 
+        else if (user_choice == 5) {
+            //save file manually
+            driver.saveFileDriver("myFile.txt", taskList);
+            cout << "Tasks saved successfully." << endl;
         }
     }
 }
