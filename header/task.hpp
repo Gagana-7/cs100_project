@@ -36,6 +36,7 @@ class Task {
         string getDescription() const;
         double getDuration() const;
         string getLabel() const;
+        const vector<Task>& getTaskList() const;
         bool getCompleted() const;
 
 };
