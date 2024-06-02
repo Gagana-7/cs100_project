@@ -57,3 +57,7 @@ void DriverTask::deleteTaskDriver(vector<Task> &taskList) {
     DeleteTask deleter;
     deleter.DeleteWhenDone(taskList);
 }
+void DriverTask::createTaskDriver (const string &name, int priority, const string &deadline, const string &description, double duration, const string &label){
+        CreateTask createList;
+        createList.CreateTasks(name, priority, deadline, description, duration, label);
+}

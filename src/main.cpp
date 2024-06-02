@@ -1,16 +1,13 @@
 #include "../header/driverTask.hpp"
 #include "../header/task.hpp"
 
-Task* findTaskbyName(const std::string& name) {
-    Task task; 
-    const vector<Task>& taskList = task.getTaskList();
-
-    for (const Task& task : taskList) {
-        if (task.getName() == name) {
-            return const_cast<Task*>(&task);
+Task findTaskbyName(const string &name, vector<Task> &taskList) {
+    for (int i = 0; i < taskList.size(); i++) {
+        if (taskList.at(i).getName() == name) {
+            return taskList.at(i);
         }
     }
-    return nullptr;
+    return Task();
 }
 
 int main() {
@@ -41,7 +38,30 @@ int main() {
             break;
         }
         else if (user_choice == 1) {
-            cout << "You have chosen to make a new task" << endl;
+            string taskname;
+            int taskpriority;
+            string taskdeadline;
+            string taskdescription;
+            double taskduration;
+            string tasklabel;
+            cout << "You have chosen to make a new task" << endl << endl;
+            cout << "Enter task name" << endl;
+            getline(cin, taskname);
+            cout << "Enter task priority level from most important to least important(1-5)" << endl;
+            cin >> taskpriority;
+            cin.ignore();
+            cout << "Enter deadline for task to be completed (ex: mm/dd/yyyy)" << endl;
+            getline(cin, taskdeadline);
+            cout << "Enter description for what the task is" << endl;
+            getline(cin, taskdescription);
+            cout << "Enter the approximate time the task will take in minutes (ex: 85)" << endl;
+            cin >> taskduration;
+            cin.ignore();
+            cout << "Give your task a label (ex: school, work, etc)" << endl;
+            getline(cin, tasklabel);
+
+            driver.createTaskDriver(taskname, taskpriority, taskdeadline, taskdescription, taskduration, tasklabel);
+
         }
         else if(user_choice == 2) {
             while(true) {
@@ -51,7 +71,7 @@ int main() {
                 cout << "Enter the name of the task you wish to edit" << endl;
                 getline(cin, name);
 
-                Task* task = findTaskbyName(name);
+                Task* task = findTaskbyName(name, taskList);
 
                 if (task != nullptr) {
                     cout << "Choose one of the following to edit:" << endl;

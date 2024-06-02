@@ -5,25 +5,24 @@ using namespace std;
 #include "../header/createtask.hpp"
 
 //created and initialized the constructor 
-CreateTask::createTask(){
-    name = "Unititled";
-    priority = 0;
-    deadline = "No deadline";
-    description = "No description"
-    duration = 0;
-    label = "No label";
-    completed = false; 
+CreateTask::CreateTask(){
+    setName("Unititled");
+    setPriority(0);
+    setDeadline("No deadline");
+    setDescription("No description");
+    setDuration(0);
+    setLabel("No label");
+    setCompleted(false);
 }
 
 //initializing variables with parameters 
- CreateTask::createTask(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label, ){
-    this->name = name;
-    this->priority = priority;
-    this-> deadline  = deadline;
-    this->description = description;
-    this->duration = duration;
-    this->label = label;
-    this->completed = false
-    
- }
+void CreateTask::CreateTasks(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label) {
+    setName(name);
+    setPriority(priority);
+    setDeadline(deadline);
+    setDescription(description);
+    setDuration(duration);
+    setLabel(label);
+    setCompleted(false);
+}
 

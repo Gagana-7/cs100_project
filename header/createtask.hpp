@@ -8,10 +8,10 @@ using namespace std;
 class CreateTask : public Task {
 public:
     // Constructor
-   void createTask();
+   CreateTask();
 
     //overloaded constructor
-   void createTask(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label);
+   void CreateTasks(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label);
 
 
 };
