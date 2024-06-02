@@ -44,7 +44,6 @@ int main() {
         }
         else if(user_choice == 2) {
             while(true) {
-
                 int edit_choice;
                 string name;
                 cout << "Enter the name of the task you wish to edit" << endl;
@@ -83,6 +82,12 @@ int main() {
                 }
                 else {
                     cout << "Task not Found" << endl;
+                }
+                cout << "To exit editing, enter 0" << endl;
+                int exit_check;
+                cin >> exit_check;
+                if (exit_check == 0) {
+                    break;
                 }
             }
         }
