@@ -11,7 +11,7 @@ public:
    CreateTask();
 
     //overloaded constructor
-   void CreateTasks(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label);
+   Task CreateTasks(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label);
 
 
 };

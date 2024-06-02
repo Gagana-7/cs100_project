@@ -19,6 +19,11 @@ class Task {
         
     public:
 
+        Task() : priority(0), duration(0.0), completed(false) {}
+
+        Task(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label) 
+        : name(name), priority(priority), deadline(deadline), description(description), duration(duration), label(label), completed(false) {}
+
         //setters
         void setName(const std::string& name);
         void setPriority(int priority);
