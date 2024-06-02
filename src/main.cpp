@@ -84,6 +84,12 @@ int main() {
                 else {
                     cout << "Task not Found" << endl;
                 }
+                cout << "To exit editing, enter 0" << endl;
+                int exit_check;
+                cin >> exit_check;
+                if (exit_check == 0) {
+                    break;
+                }
             }
         }
     }
