@@ -92,6 +92,25 @@ int main() {
                 }
             }
         }
+        else if (user_choice == 3) {
+            cout << "Do you wish to delete a specific task or delete all marked completed? " << endl;
+            cout << "If a specific task, enter 1" << endl;
+            cout << "If all completed, enter 2" << endl;
+            int deletechoice;
+            cin >> deletechoice;
+            if (deletechoice == 1) {
+                cout << "Please enter the task name: " << endl;
+                string delchoice;
+                cin >> delchoice;
+                driver.deleteTaskDriver(delchoice, taskList);
+            }
+            else if (deletechoice == 2) {
+                driver.deleteTaskDriver(taskList);
+            }
+            else {
+                cout << "Invalid choice." << endl;
+            }
+        }
     }
 }
 
