@@ -13,8 +13,9 @@ class taskFile {
         string fileName;
     public: 
         void setFileName(string name);
-        void writeFile(vector<Task>& tasks);
+        void writeFile(const vector<Task>& tasks);
         void readFile(vector<Task>& tasks);
+        
 };
 
 #endif //TASKFILE_CPP

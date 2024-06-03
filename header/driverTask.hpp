@@ -6,6 +6,7 @@
 #include "editTask.hpp"
 #include "deleteTask.hpp"
 #include "display.hpp"
+#include "taskFile.hpp"
 
 #include <iostream>
 using namespace std;
@@ -18,6 +19,9 @@ class DriverTask {
         void deleteTaskDriver(const string &name, vector<Task> &taskList); 
         void deleteTaskDriver(vector<Task> &taskList);
         void createTaskDriver (const string &name, int priority, const string &deadline, const string &description, double duration, const string &label, vector<Task> &taskList);
+        void saveFileDriver(const string &fileName, const vector<Task> &taskList);
+        void loadFileDriver(const string &fileName, vector<Task> &taskList);
+
 };
 
 #endif //DRIVERTASK_HPP
