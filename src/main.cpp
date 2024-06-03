@@ -16,7 +16,7 @@ int main() {
     DriverTask driver;
     int user_choice;
 
-    cout << " Do you have lots of things to do? Do you not know how to manage your time? All those worries will go away now!" << endl; 
+    cout << " Do you have lots of things to do? Do you not know how to manage your time? Fear not, all those worries will go away now!" << endl; 
     cout << "Welcome to RANGBOT, your own personal task management system!" << endl;
 
     while(true) {
