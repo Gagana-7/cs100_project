@@ -62,14 +62,29 @@ void DriverTask::createTaskDriver (const string &name, int priority, const strin
         taskList.push_back(createList.CreateTasks(name, priority, deadline, description, duration, label));
 }
 
- void DriverTask::saveFileDriver(const string &fileName, const vector<Task> &taskList) {
+void DriverTask::saveFileDriver(const string &fileName, const vector<Task> &taskList) {
     taskFile saveFile;
     saveFile.setFileName(fileName);
     saveFile.writeFile(taskList);
  }
 
-  void DriverTask::loadFileDriver(const string &fileName, vector<Task> &taskList) {
+void DriverTask::loadFileDriver(const string &fileName, vector<Task> &taskList) {
     taskFile loadFile;
     loadFile.setFileName(fileName);
     loadFile.readFile(taskList);
  }
+
+void DriverTask::displayTasks(vector<Task> &taskList, int choice){
+   TaskDisplay displaytasks;
+   switch (choice){
+       case 1:
+           displaytasks.displayByPriority(taskList);
+           break;
+       case 2:
+           displaytasks.displayByDeadline(taskList);
+           break;
+       default:
+           cout << "Invalid choice" << endl;
+           break;
+       }
+}

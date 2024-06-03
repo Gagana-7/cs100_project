@@ -140,8 +140,21 @@ int main() {
             }
         } 
         else if (user_choice == 4) {
-            //display
-        } 
+            int choice;
+            cout << "You have chosen to display all your tasks!" << endl;
+                if (taskList.empty() == true){
+                cout << "There are No Tasks" << endl;
+                break;
+            }
+            cout << "Choose which way to sort your tasks" << endl;
+            cout << "Enter 1: Priority" << endl;
+            cout << "Enter 2: Deadline" << endl;
+            cin >> choice;
+            cin.ignore();
+            driver.displayTasks(taskList, choice);
+       }
+
+        
         else if (user_choice == 5) {
             //save file manually
             driver.saveFileDriver("myFile.txt", taskList);
