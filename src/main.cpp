@@ -61,6 +61,7 @@ int main() {
         cout << "To quit, enter 0" << endl;
 
         inputValidation(user_choice);
+        cin.ignore();
 
         if (user_choice == 0) {
             cout << "Have a good day" << endl;
