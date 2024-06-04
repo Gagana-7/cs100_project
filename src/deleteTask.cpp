@@ -17,6 +17,7 @@ void DeleteTask::DeleteByName(vector<Task> &taskList, string name) {
             i--;
         }
     }
+    cout << "Task has been deleted!" << endl;
 }
 
 void DeleteTask::DeleteWhenDone(vector<Task> &taskList) {
@@ -27,4 +28,5 @@ void DeleteTask::DeleteWhenDone(vector<Task> &taskList) {
             i--;
         }
     }
+    cout << "Task has been deleted" << endl;
 }
