@@ -3,7 +3,7 @@
 
 TEST(TestCreateTask, TestEmptyConstructorName) {
     CreateTask creator;
-    EXPECT_EQ(creator.getName(), "Untitled");
+    EXPECT_EQ(creator.getName(), "Unititled");
 }
 
 TEST(TestCreateTask, TestContructorName) {

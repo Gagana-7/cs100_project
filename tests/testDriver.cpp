@@ -72,10 +72,10 @@ TEST(TestDriverTask, TestDeleteTaskDriverSizeNonZero) {
 
 TEST(TestDriverTask, TestDeleteDriverCompleted) {
     vector<Task> taskList;
-    Task testTask1("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
-    taskList.push_back(testTask1);
     DriverTask driver;
+    Task testTask1("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
     driver.editTaskDriver(testTask1, 7);
+    taskList.push_back(testTask1);
     driver.deleteTaskDriver(taskList);
     EXPECT_EQ(taskList.size(), 0);
 }

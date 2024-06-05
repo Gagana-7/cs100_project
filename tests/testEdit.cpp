@@ -5,14 +5,14 @@ TEST(TaskEditTest, EditTaskName1) {
     Task Task1("HW", 3, "2024/07/21", "Test 1", 30.0, "School");
     editTask editor;
     editor.editName(Task1, "Cooking Dinner");
-    EXPECT_EQ(Task1.getName(), "New Name");
+    EXPECT_EQ(Task1.getName(), "Cooking Dinner");
 }
 
 TEST(TaskEditTest, EditTaskName2) {
     Task Task2("Groceries", 4, "2024/05/23", "Description 2", 20.0, "Errand");
     editTask editor;
     editor.editDeadline(Task2, "2024/04/23");
-    EXPECT_EQ(Task2.getDeadline(), "New Deadline");
+    EXPECT_EQ(Task2.getDeadline(), "2024/04/23");
 }
 
 TEST(TaskEditTest, EditTaskName3) {
@@ -33,5 +33,5 @@ TEST(TaskEditTest, EditTaskName5) {
     Task Task3("Basketball", 5, "2024/08/10", "Description 3", 80.0, "Work");
     editTask editor;
     editor.editLabel(Task3, "Home");
-    EXPECT_EQ(Task3.getLabel(), "New Label");
+    EXPECT_EQ(Task3.getLabel(), "Home");
 }

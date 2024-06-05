@@ -54,5 +54,5 @@ TEST(TaskDisplay, displayTaskByLabel) {
     tasks.push_back(Task1);
     tasks.push_back(Task2);
     tasks.push_back(Task3);
-    EXPECT_EQ(tasks[0].getDeadline(), "Work");
+    EXPECT_EQ(tasks[0].getLabel(), "Work");
 }

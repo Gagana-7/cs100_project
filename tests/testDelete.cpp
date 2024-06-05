@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "../header/deleteTask.hpp"
+#include "../header/editTask.hpp"
 
 TEST(DeleteTask, DeleteByName) {
     vector<Task> tasks;
@@ -32,7 +33,9 @@ TEST(DeleteTask, DeleteByName3) {
 TEST(DeleteTask, DeleteWhenDone) {
     vector<Task> tasks;
     DeleteTask deleter;
+    editTask editor;
     Task newTask("Setup Party", 2, "2024/09/15", "Description 3", 30.0, "Home");
+    editor.markAsComplete(newTask);
     tasks.push_back(newTask);
     deleter.DeleteWhenDone(tasks);
     ASSERT_EQ(tasks.size(), 0);
@@ -42,7 +45,9 @@ TEST(DeleteTask, DeleteWhenDone) {
 TEST(DeleteTask, DeleteWhenDone2) {
     vector<Task> tasks;
     DeleteTask deleter;
+    editTask editor;
     Task newTask("Paper Review", 1, "2024/06/01", "Description 1", 50.0, "Work");
+    editor.markAsComplete(newTask);
     tasks.push_back(newTask);
     deleter.DeleteWhenDone(tasks);
     ASSERT_EQ(tasks.size(), 0);
