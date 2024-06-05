@@ -237,6 +237,12 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 ><img width="424" alt="Screenshot 2024-06-04 at 7 50 39 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/9f1a5407-91f8-4652-8869-6acd27717233">
 >
+> We then check to see if the task has been deleted and officially see that it has been deleted when we display by deadline. Shows display by deadline work and shows delete when marked as completed works.
+>
+> <img width="314" alt="Screenshot 2024-06-04 at 8 05 57 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/e32b9f00-0853-44ba-bca8-f56fe7793c9d">
+>
+> 
+
 
 
 
