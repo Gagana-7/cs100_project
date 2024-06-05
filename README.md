@@ -206,14 +206,13 @@ Below is the description for all the functions of the UML diagram we start off w
 
  
  > ## Final deliverable
- > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
- 
+>
+> We made no changes to the UML since Phase 3
+>Class UML Diagram:
+
+> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/8425f508-3126-4a36-acb0-88a44030ffa0)
+ >
  ## Screenshots
- > Screenshots of the input/output after running your application
 > 
 > To start off we see that our system already has previous tasks that were created from the last time the program was ran. This shows that the tasks save when the program stops and load up when program starts.
 >
@@ -278,8 +277,7 @@ Below is the description for all the functions of the UML diagram we start off w
 
  
  ## Installation/Usage
- > Instructions on installing and running your application
-> 
+>
 > In order to run this application the github repository must be cloned
         (command: git clone --recursive <https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005.git>). 
 >
@@ -295,8 +293,8 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 > In order to run the program: 
 >
->After the repo has been cloned use file path to open an integrated terminal in the src folder.After the intergrated terminal has been opened run the following command statements:
->
+>After the repo has been cloned use file path to open an integrated terminal in the src folder.After the intergrated terminal has been opened run the following command statements (Alternatively you can also manually download the folder and upload it to your own IDE and run it):
+> 
 >g++ main.cpp driverTask.cpp task.cpp editTask.cpp deleteTask.cpp createTask.cpp taskFile.cpp TaskDisplay.cpp PrioritysortTask.cpp DeadlineSortTask.cpp
 >
 > ./a.out
@@ -306,7 +304,7 @@ Below is the description for all the functions of the UML diagram we start off w
 
 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+>
 > We tested this project by running cmake . make and ./bin/runAllTests. These commands allowed us to create an executable in the bin file which ran all of our 61 tests total. Below are the screenshots from every test that was ran through each file. All of them passed.
 > 
 ><img width="963" alt="Screenshot 2024-06-05 at 12 12 40 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/bd4969dd-a16f-4083-8756-833fbc0a4569">
