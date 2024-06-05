@@ -18,6 +18,7 @@ class DriverTask {
         void editTaskDriver(Task &task, int choice, const string& user_choice);
         void editTaskDriver(Task &task, int choice, int user_choice);
         void editTaskDriver(Task &task, int choice, double user_choice);
+        void editTaskDriver(Task &task, int choice);
         void deleteTaskDriver(const string &name, vector<Task> &taskList); 
         void deleteTaskDriver(vector<Task> &taskList);
         void createTaskDriver (const string &name, int priority, const string &deadline, const string &description, double duration, const string &label, vector<Task> &taskList);

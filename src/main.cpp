@@ -2,6 +2,7 @@
 #include "../header/task.hpp"
 #include <limits>
 
+// used to find a specific task given the name
 Task* findTaskbyName(const string &name, vector<Task> &taskList) {
     for (int i = 0; i < taskList.size(); i++) {
         if (taskList.at(i).getName() == name) {
@@ -10,7 +11,7 @@ Task* findTaskbyName(const string &name, vector<Task> &taskList) {
     }
     return nullptr;
 }
-
+// makes sure an int is inputted
 void inputValidation(int &input) {
     while (true) {
         cin >> input;
@@ -25,7 +26,7 @@ void inputValidation(int &input) {
         }
     }
 }
-
+// makes sure a double is inputted
 void doubinputValidation(double &input) {
     while (true) {
         cin >> input;
@@ -46,7 +47,9 @@ int main() {
     vector <Task> taskList;
     DriverTask driver;
     int user_choice;
-    driver.loadFileDriver("myFile.txt", taskList);
+
+    driver.loadFileDriver("myFile.txt", taskList); // load tasks saved in previous sessions.
+
     cout << " Do you have lots of things to do? Do you not know how to manage your time? All those worries will go away now!" << endl; 
     cout << "Welcome to RANGBOT, your own personal task management system!" << endl;
 
@@ -71,25 +74,32 @@ int main() {
         }
 
         else if (user_choice == 1) {
+
             string taskname;
             int taskpriority;
             string taskdeadline;
             string taskdescription;
             double taskduration;
             string tasklabel;
+
             cout << "You have chosen to make a new task" << endl << endl;
             cout << "Enter task name" << endl;
             getline(cin, taskname);
+
             cout << "Enter task priority level from most important to least important(1-5)" << endl;
             inputValidation(taskpriority);
             cin.ignore();
+
             cout << "Enter deadline for task to be completed (ex: mm/dd/yyyy)" << endl;
             getline(cin, taskdeadline);
+
             cout << "Enter description for what the task is" << endl;
             getline(cin, taskdescription);
+
             cout << "Enter the approximate time the task will take in minutes (ex: 85)" << endl;
             doubinputValidation(taskduration);
             cin.ignore();
+
             cout << "Give your task a label (ex: school, work, etc)" << endl;
             getline(cin, tasklabel);
 
@@ -99,14 +109,17 @@ int main() {
 
         else if(user_choice == 2) {
             while(true) {
+
                 int edit_choice;
                 string name;
+
                 cout << "Enter the name of the task you wish to edit" << endl;
                 getline(cin, name);
 
                 Task* task = findTaskbyName(name, taskList);
 
                 if (task != nullptr) {
+
                     cout << "Choose one of the following to edit:" << endl;
                     cout << "Name: press 1" << endl;
                     cout << "Priority: press 2" << endl;
@@ -115,9 +128,11 @@ int main() {
                     cout << "Duration: press 5" << endl;
                     cout << "Label: press 6" << endl;
                     cout << "Mark as complete: press 7" << endl;
+
                     inputValidation(edit_choice);
                     cin.ignore();
-                    if (edit_choice == 1 || edit_choice == 3 || edit_choice == 4 || edit_choice == 6 || edit_choice == 7) {
+
+                    if (edit_choice == 1 || edit_choice == 3 || edit_choice == 4 || edit_choice == 6) {
                         cout << "Enter new value" << endl;
                         string user_input_str;
                         getline(cin, user_input_str);
@@ -135,6 +150,10 @@ int main() {
                         doubinputValidation(user_input_double);
                         driver.editTaskDriver(*task, edit_choice, user_input_double);
                     }
+                    else if(edit_choice == 7) {
+                        cout << "Task marked as complete" << endl;
+                        driver.editTaskDriver(*task, edit_choice);
+                    }
                     else {
                         cout << "Invalid Input" << endl;
                     }
@@ -142,20 +161,28 @@ int main() {
                 else {
                     cout << "Task not Found" << endl;
                 }
-                cout << "To exit editing, enter 0; else enter a different number" << endl;
+                cout << endl;
+                cout << "Your task has been succesfully edited" << endl;
+                cout << "To exit editing, enter 0" << endl;
+                cout << "Enter a different number to continue editing" << endl;
+
                 int exit_check;
                 inputValidation(exit_check);
                 cin.ignore();
+
                 if (exit_check == 0) {
                     break;
                 }
             }
         }
         else if (user_choice == 3) {
+
             cout << "Do you wish to delete a specific task or delete all marked completed? " << endl;
             cout << "If a specific task, enter 1" << endl;
             cout << "If all completed, enter 2" << endl;
+
             int deletechoice;
+            
             inputValidation(deletechoice);
             if (deletechoice == 1) {
                 cout << "Please enter the task name: " << endl;
@@ -183,9 +210,7 @@ int main() {
             inputValidation(choice);
             cin.ignore();
             driver.displayTasks(taskList, choice);
-       }
-
-        
+        }
         else if (user_choice == 5) {
             //save file manually
             driver.saveFileDriver("myFile.txt", taskList);

@@ -15,9 +15,6 @@ void DriverTask::editTaskDriver(Task &task, int edit_choice, const string& user_
         case 6:
             editor.editLabel(task, user_input);
             break;
-        case 7:
-            editor.markAsComplete(task);
-            break;
         default:
             cout << "Invalid choice" << endl;
             break;
@@ -41,6 +38,18 @@ void DriverTask::editTaskDriver(Task &task, int edit_choice, double user_input) 
     switch (edit_choice) {
         case 5:
             editor.editDuration(task, user_input);
+            break;
+        default:
+            cout << "Invalid choice" << endl;
+            break;
+    }
+}
+
+void DriverTask::editTaskDriver(Task &task, int edit_choice) {
+    editTask editor;
+    switch(edit_choice) {
+        case 7:
+            editor.markAsComplete(task);
             break;
         default:
             cout << "Invalid choice" << endl;
