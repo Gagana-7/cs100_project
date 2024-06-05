@@ -245,7 +245,31 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 > <img width="428" alt="Screenshot 2024-06-04 at 8 10 52 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/f3f98673-dbec-45a3-abde-4d523ca35f36">
 >
-> 
+> We then edited the Do chores task one more time to bring the deadline up to June 7 to check if it would be moved when calling deadline sort. The task did move which shows that our edit function/option and our deadline sort function/option works.
+>
+> <img width="328" alt="Screenshot 2024-06-04 at 8 44 28 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/63f4c04c-0730-4c47-8b50-5eef90538172">
+>
+> We then use the save function to save our tasks manually so that they save if you close and reopen the program. If you accidently quit the program without saving the tasks automatically save so dont worry about forgetting to save. We then showed our save function/option working below by closing the application and reopening it while displaying tasks by deadline. As seen below the save function/option works. 
+>
+> <img width="328" alt="Screenshot 2024-06-04 at 8 44 28 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/679766b9-bc48-400c-a6e3-81b6f2beb828">
+>
+> We then decided to delete a task by name. We decide to delete the task "Do Chores" and output the other tasks based on priority level to see if the task is deleted. We can see below that the task has been deleted and has not been displayed below. This shows that our delete by name function/option and our display by priority function/option works.
+>
+> <img width="476" alt="Screenshot 2024-06-04 at 9 08 30 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/19862bd7-672f-46f7-86ee-43a7fd7d88a9">
+>
+> Finally, we decide to changed the whole play soccer task into something else in order to show the edit function/option completely works.
+>
+> <img width="352" alt="Screenshot 2024-06-04 at 9 15 10 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/caaca0dd-96ad-40cd-ba63-bca07ac6a776">
+>
+> <img width="334" alt="Screenshot 2024-06-04 at 9 15 39 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/37084035-6393-4fbc-b7e5-fdc189632912">
+>
+> Finally, after all the options have been edited we output to see that the task has been completely changed. This shows that our edit function completely works.
+>
+> <img width="352" alt="Screenshot 2024-06-04 at 9 15 10 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/47b6ed5b-f1c2-40ce-90b4-aa323a0133c2">
+>
+>These are all the input and output screenshots for our program.
+
+
 
 
  
