@@ -1,4 +1,3 @@
-
 # RANGBOT
  
  Authors: Arnav Subramanian, Nikhil Rao, Roman Javadyan, Gagana Warusawithana
@@ -215,8 +214,39 @@ Below is the description for all the functions of the UML diagram we start off w
  
  ## Screenshots
  > Screenshots of the input/output after running your application
+> 
+> To start off we see that our system already has previous tasks that were created from the last time the program was ran. This shows that the tasks save when the program stops and load up when program starts.
+>
+> We first output the tasks based on their priority with the most important (1) on top down to the least important (5) on the bottom. This shows us that our display by priority options works.
+> 
+><img width="682" alt="Screenshot 2024-06-04 at 7 24 57 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/32cbe34e-58c0-4951-a797-075fe2e9b855">
+>
+> We then output the tasks with the most recent deadline on top and the furthest deadline on the bottom. This shows that our display by deadline functions works.
+> 
+> <img width="420" alt="Screenshot 2024-06-04 at 7 25 36 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/ee0d5761-ca21-4d41-bbc3-42772416b320">
+>
+> After we display wiht both priority and deadline we then start to edit the function. Once we are in edit we mark the task "Do project" as completed. This changes the marked as completed section from 0 (false) to 1 (true) if it works. Once the mark as task button is clicked (through typing 7) the task is automatically marked. This shows us that our edit options wor.s
+> 
+> <img width="293" alt="Screenshot 2024-06-04 at 7 38 30 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/4b664957-d64f-402e-a892-3171aa539fa9">
+>
+> We then output by priority once again and see that "Do project" has been changed from 0 (false) to 1 (true).
+>
+<img width="363" alt="Screenshot 2024-06-04 at 7 38 58 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/b41acdee-a399-4f3a-84b9-f0e572165384">
+
+> We then go to our delete Task option and see that there are two option: "delete by name" and "delete all marked completed". In this case we click "delete all marked completed" and we see that the task as been officially deleted. This shows us that our delete task and edit task options work.
+>
+><img width="424" alt="Screenshot 2024-06-04 at 7 50 39 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/9f1a5407-91f8-4652-8869-6acd27717233">
+>
+
+
+
+
+
+
+ 
  ## Installation/Usage
  > Instructions on installing and running your application
+> 
 > In order to run this application the github repository must be cloned
         (command: git clone --recursive <https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005.git>). After the repo has been cloned use file path to open an integrated terminal in the src folder.
 >
