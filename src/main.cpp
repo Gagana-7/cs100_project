@@ -201,6 +201,7 @@ int main() {
                 cout << "Please enter the task name: " << endl;
                 string delchoice;
                 cin >> delchoice;
+                cin.ignore();
                 driver.deleteTaskDriver(delchoice, taskList);
             }
             else if (deletechoice == 2) {
