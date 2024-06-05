@@ -16,7 +16,7 @@ CreateTask::CreateTask(){
 }
 
 //initializing variables with parameters 
-Task CreateTask::CreateTasks(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label) {
+ Task CreateTask::CreateTasks(const string &name, int priority, const string &deadline, const string &description, double duration, const string &label) {
     Task newTask;
     newTask.setName(name);
     newTask.setPriority(priority);
