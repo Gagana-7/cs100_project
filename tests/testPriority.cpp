@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "../header/PrioritysortTask.hpp"
 
-TEST(PrioritySortTest, SortTasksByPriority) {
+TEST(PrioritySortTest, SortTasksByPriority1) {
     vector<Task> tasks;
     PrioritySortTask priorSort;
     Task Task1("HW", 3, "2024/07/21", "Test 1", 30.0, "School");
@@ -14,7 +14,7 @@ TEST(PrioritySortTest, SortTasksByPriority) {
     EXPECT_TRUE(tasks[0].getPriority() <= tasks[1].getPriority());
 }
 
-TEST(PrioritySortTest, SortTasksByPriority) {
+TEST(PrioritySortTest, SortTasksByPriority2) {
     vector<Task> tasks;
     PrioritySortTask priorSort;
     Task Task1("Paper Review", 1, "2024/06/01", "Description 1", 50.0, "Work");
@@ -27,7 +27,7 @@ TEST(PrioritySortTest, SortTasksByPriority) {
     EXPECT_TRUE(tasks[0].getPriority() <= tasks[1].getPriority());
 }
 
-TEST(PrioritySortTest, SortTasksByPriority) {
+TEST(PrioritySortTest, SortTasksByPriority3) {
     vector<Task> tasks;
     PrioritySortTask priorSort;
     Task Task2("Shopping", 4, "2024/06/18", "Description 1", 40.0, "Misc");
@@ -40,7 +40,7 @@ TEST(PrioritySortTest, SortTasksByPriority) {
     EXPECT_TRUE(tasks[0].getPriority() <= tasks[1].getPriority());
 }
 
-TEST(PrioritySortTest, SortTasksByPriority) {
+TEST(PrioritySortTest, SortTasksByPriority4) {
     vector<Task> tasks;
     PrioritySortTask priorSort;
     Task Task1("Cooking Dinner", 3, "2024/07/21", "Description 1", 30.0, "School");
@@ -53,7 +53,7 @@ TEST(PrioritySortTest, SortTasksByPriority) {
     EXPECT_TRUE(tasks[0].getPriority() <= tasks[1].getPriority());
 }
 
-TEST(PrioritySortTest, SortTasksByPriority) {
+TEST(PrioritySortTest, SortTasksByPriority5) {
     vector<Task> tasks;
     PrioritySortTask priorSort;
     Task Task1("Soccer", 3, "2024/10/01", "Description 1", 50.0, "Work");

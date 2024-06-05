@@ -10,6 +10,25 @@ TEST(DeleteTask, DeleteByName) {
     ASSERT_EQ(tasks.size(), 0);
 }
 
+TEST(DeleteTask, DeleteByName2) {
+    vector<Task> tasks;
+    DeleteTask deleter;
+    Task newTask("Finish Project", 3, "2024/11/01", "Description 1", 50.0, "Work");
+    tasks.push_back(newTask);
+    deleter.DeleteByName(tasks, "Finish Project");
+    ASSERT_EQ(tasks.size(), 0);
+}
+
+TEST(DeleteTask, DeleteByName3) {
+    vector<Task> tasks;
+    DeleteTask deleter;
+    Task newTask("Apply to Jobs", 2, "2024/06/03", "Description 2", 30.0, "Work");
+    tasks.push_back(newTask);
+    deleter.DeleteByName(tasks, "Apply to Jobs");
+    ASSERT_EQ(tasks.size(), 0);
+}
+
+
 TEST(DeleteTask, DeleteWhenDone) {
     vector<Task> tasks;
     DeleteTask deleter;
@@ -19,16 +38,8 @@ TEST(DeleteTask, DeleteWhenDone) {
     ASSERT_EQ(tasks.size(), 0);
 }
 
-TEST(DeleteTask, DeleteByName) {
-    vector<Task> tasks;
-    DeleteTask deleter;
-    Task newTask("Finish Project", 3, "2024/11/01", "Description 1", 50.0, "Work");
-    tasks.push_back(newTask);
-    deleter.DeleteByName(tasks, "Finish Project");
-    ASSERT_EQ(tasks.size(), 0);
-}
 
-TEST(DeleteTask, DeleteWhenDone) {
+TEST(DeleteTask, DeleteWhenDone2) {
     vector<Task> tasks;
     DeleteTask deleter;
     Task newTask("Paper Review", 1, "2024/06/01", "Description 1", 50.0, "Work");
@@ -37,11 +48,3 @@ TEST(DeleteTask, DeleteWhenDone) {
     ASSERT_EQ(tasks.size(), 0);
 }
 
-TEST(DeleteTask, DeleteByName) {
-    vector<Task> tasks;
-    DeleteTask deleter;
-    Task newTask("Apply to Jobs", 2, "2024/06/03", "Description 2", 30.0, "Work");
-    tasks.push_back(newTask);
-    deleter.DeleteByName(tasks, "Apply to Jobs");
-    ASSERT_EQ(tasks.size(), 0);
-}

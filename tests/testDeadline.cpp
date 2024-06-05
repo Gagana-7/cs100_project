@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "../header/DeadlineSortTask.hpp"
 
-TEST(DeadlineSortTest, SortTasksByDeadline) {
+TEST(DeadlineSortTask, SortTasksByDeadline1) {
     vector<Task> tasks;
     DeadlineSortTask deadlineSort;
     Task Task1("HW", 3, "2024/07/21", "Test 1", 30.0, "School");
@@ -14,7 +14,7 @@ TEST(DeadlineSortTest, SortTasksByDeadline) {
     EXPECT_TRUE(tasks[0].getDeadline() <= tasks[1].getDeadline());
 }
 
-TEST(DeadlineSortTest, SortTasksByDeadline) {
+TEST(DeadlineSortTask, SortTasksByDeadline2) {
     vector<Task> tasks;
     DeadlineSortTask deadlineSort;
     Task Task1("Paper Review", 1, "2024/06/01", "Description 1", 50.0, "Work");
@@ -23,11 +23,11 @@ TEST(DeadlineSortTest, SortTasksByDeadline) {
     tasks.push_back(Task1);
     tasks.push_back(Task2);
     tasks.push_back(Task3);
-    priorSort.DeadlineSort(tasks);
+    deadlineSort.DeadlineSort(tasks);
     EXPECT_TRUE(tasks[0].getDeadline() <= tasks[1].getDeadline());
 }
 
-TEST(DeadlineSortTest, SortTasksByDeadline) {
+TEST(DeadlineSortTask, SortTasksByDeadline3) {
     vector<Task> tasks;
     DeadlineSortTask deadlineSort;
     Task Task2("Shopping", 4, "2024/06/18", "Description 1", 40.0, "Misc");
@@ -40,7 +40,7 @@ TEST(DeadlineSortTest, SortTasksByDeadline) {
     EXPECT_TRUE(tasks[0].getDeadline() <= tasks[1].getDeadline());
 }
 
-TEST(DeadlineSortTest, SortTasksByDeadline) {
+TEST(DeadlineSortTask, SortTasksByDeadline4) {
     vector<Task> tasks;
     DeadlineSortTask deadlineSort;
     Task Task1("Cooking Dinner", 3, "2024/07/21", "Description 1", 30.0, "School");
@@ -53,7 +53,7 @@ TEST(DeadlineSortTest, SortTasksByDeadline) {
     EXPECT_TRUE(tasks[0].getDeadline() <= tasks[1].getDeadline());
 }
 
-TEST(DeadlineSortTest, SortTasksByDeadline) {
+TEST(DeadlineSortTask, SortTasksByDeadline5) {
     vector<Task> tasks;
     DeadlineSortTask deadlineSort;
     Task Task1("Soccer", 3, "2024/10/01", "Description 1", 50.0, "Work");

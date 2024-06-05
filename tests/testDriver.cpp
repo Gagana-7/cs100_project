@@ -4,43 +4,43 @@
 TEST(TestDriverTask, TestEditTaskDriverName) {
     Task testTask("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
     DriverTask driver;
-    driver.editTaskDriver(testTask, 1, "Prepare the cheat sheet")
-    EXPECT_EQ(testTask.getName(), "Prepare the cheat sheet")
+    driver.editTaskDriver(testTask, 1, "Prepare the cheat sheet");
+    EXPECT_EQ(testTask.getName(), "Prepare the cheat sheet");
 }
 
 TEST(TestDriverTask, TestEditTaskDriverDeadline) {
     Task testTask("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
     DriverTask driver;
-    driver.editTaskDriver(testTask, 3, "06/06/2024")
-    EXPECT_EQ(testTask.getDeadline(), "06/06/2024")
+    driver.editTaskDriver(testTask, 3, "06/06/2024");
+    EXPECT_EQ(testTask.getDeadline(), "06/06/2024");
 }
 
 TEST(TestDriverTask, TestEditTaskDriverDescription) {
     Task testTask("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
     DriverTask driver;
-    driver.editTaskDriver(testTask, 4, "Write cheatsheet for CS100 exam")
-    EXPECT_EQ(testTask.getDescription(), "Write cheatsheet for CS100 exam")
+    driver.editTaskDriver(testTask, 4, "Write cheatsheet for CS100 exam");
+    EXPECT_EQ(testTask.getDescription(), "Write cheatsheet for CS100 exam");
 }
 
 TEST(TestDriverTask, TestEditTaskDriverLabel) {
     Task testTask("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
     DriverTask driver;
-    driver.editTaskDriver(testTask, 6, "Personal")
-    EXPECT_EQ(testTask.getLabel(), "Personal")
+    driver.editTaskDriver(testTask, 6, "Personal");
+    EXPECT_EQ(testTask.getLabel(), "Personal");
 }
 
 TEST(TestDriverTask, TestEditTaskDriverPriority) {
     Task testTask("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
     DriverTask driver;
-    driver.editTaskDriver(testTask, 2, 1)
-    EXPECT_EQ(testTask.getPriority(), 1)
+    driver.editTaskDriver(testTask, 2, 1);
+    EXPECT_EQ(testTask.getPriority(), 1);
 }
 
 TEST(TestDriverTask, TestEditTaskDriverDuration) {
     Task testTask("Study for Exam", 3, "06/07/2024", "Prepare for CS100 exam", 200.0, "School");
     DriverTask driver;
-    driver.editTaskDriver(testTask, 5, 150.0)
-    EXPECT_EQ(testTask.getName(), 150.0)
+    driver.editTaskDriver(testTask, 5, 150.0);
+    EXPECT_EQ(testTask.getDuration(), 150.0);
 }
 
 TEST(TestDriverTask, TestEditTaskDriverCompleted) {
@@ -94,7 +94,7 @@ TEST(TestDriverTask, TestCreateDriverValue) {
     EXPECT_EQ(taskList[0].getPriority(), 3);
 }
 
-TEST(TestDriverTask, TestSave&LoadDriver) {
+TEST(TestDriverTask, TestSaveAndLoadDriver) {
     vector<Task> taskList;
     string testFileName = "myFile.txt";
     DriverTask driver;
@@ -129,7 +129,7 @@ TEST(TestDriverTask, TestDisplayDriverPriority) {
     EXPECT_EQ(taskList[1].getName(), "Exercise");
 }
 
-TEST(TestDriverTask, TestDisplayDriverPriority) {
+TEST(TestDriverTask, TestDisplayDriverDeadline) {
     vector<Task> taskList;
     DriverTask driver;
     Task testTask1("Study for finals", 2, "06/06/2024", "Look over study guides", 300.0, "School");
