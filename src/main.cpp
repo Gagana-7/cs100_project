@@ -52,6 +52,7 @@ int main() {
 
     while(true) {
 
+        cout << endl << endl;
         cout << "What would you like to do today?" << endl;
         cout << "Create a task, enter 1" << endl;
         cout << "Edit a task, enter 2" << endl;
@@ -64,12 +65,11 @@ int main() {
         cin.ignore();
 
         if (user_choice == 0) {
-            cout << "Have a good day" << endl;
-            //save file
+            cout << "Have a good day!" << endl;
             driver.saveFileDriver("myFile.txt", taskList);
-
             break;
         }
+
         else if (user_choice == 1) {
             string taskname;
             int taskpriority;
@@ -94,11 +94,11 @@ int main() {
             getline(cin, tasklabel);
 
             driver.createTaskDriver(taskname, taskpriority, taskdeadline, taskdescription, taskduration, tasklabel, taskList);
-
+            cout << "Task succesfully created!" << endl;
         }
+
         else if(user_choice == 2) {
             while(true) {
-
                 int edit_choice;
                 string name;
                 cout << "Enter the name of the task you wish to edit" << endl;
