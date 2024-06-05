@@ -1,4 +1,4 @@
-##RANGBOT
+## RANGBOT
  
  Authors: Arnav Subramanian, Nikhil Rao, Roman Javadyan, Gagana Warusawithana
 Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https://github.com/nrao017)> ,<[Roman Javadyan](https://github.com/rjava005)>, <[Gagana Warusawithana](https://github.com/gwaru001)> 
