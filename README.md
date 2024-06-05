@@ -241,12 +241,11 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 > <img width="314" alt="Screenshot 2024-06-04 at 8 05 57 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/e32b9f00-0853-44ba-bca8-f56fe7793c9d">
 >
+> After shows that the marked as complete works, we then create a new Task called "Do chores" as seen below with a priority level 4. We get an output message saying that our task has been created. We then check display by deadline to see that the task has been officially created and it has. This shows that our create function/option works.
+>
+> <img width="428" alt="Screenshot 2024-06-04 at 8 10 52 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/f3f98673-dbec-45a3-abde-4d523ca35f36">
+>
 > 
-
-
-
-
-
 
 
  
