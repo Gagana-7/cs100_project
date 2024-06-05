@@ -195,13 +195,13 @@ int main() {
             cout << "If all completed, enter 2" << endl;
 
             int deletechoice;
-            
+
             inputValidation(deletechoice);
+            cin.ignore();
             if (deletechoice == 1) {
                 cout << "Please enter the task name: " << endl;
                 string delchoice;
-                cin >> delchoice;
-                cin.ignore();
+                getline(cin, delchoice);
                 driver.deleteTaskDriver(delchoice, taskList);
             }
             else if (deletechoice == 2) {
