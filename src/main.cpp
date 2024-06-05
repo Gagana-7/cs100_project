@@ -201,7 +201,9 @@ int main() {
             int choice;
             cout << "You have chosen to display all your tasks!" << endl;
                 if (taskList.empty() == true){
-                cout << "There are No Tasks" << endl;
+                cout << endl;
+                cout << "There are no Tasks to display!" << endl;
+                cout << "Please run program once again" << endl;
                 break;
             }
             cout << "Choose which way to sort your tasks" << endl;
