@@ -42,6 +42,20 @@ void doubinputValidation(double &input) {
     }
 }
 
+void priorityValidation(int &priority) {
+    while (true) {
+        cin >> priority;
+        if (priority > 5 || priority < 1 || cin.fail()) {
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "Invalid input. Please enter a valid integer" << endl;
+        }
+        else {
+            break;
+        }
+    }
+}
+
 int main() {
 
     vector <Task> taskList;
@@ -87,9 +101,8 @@ int main() {
             getline(cin, taskname);
 
             cout << "Enter task priority level from most important to least important(1-5)" << endl;
-            inputValidation(taskpriority);
+            priorityValidation(taskpriority);
             cin.ignore();
-
             cout << "Enter deadline for task to be completed (ex: mm/dd/yyyy)" << endl;
             getline(cin, taskdeadline);
 
