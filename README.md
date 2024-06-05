@@ -295,4 +295,16 @@ Below is the description for all the functions of the UML diagram we start off w
 
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+> We tested this project by running cmake . make and ./bin/runAllTests. These commands allowed us to create an executable in the bin file which ran all of our 61 tests total. Below are the screenshots from every test that was ran through each file. All of them passed.
+> 
+><img width="963" alt="Screenshot 2024-06-05 at 12 12 40 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/bd4969dd-a16f-4083-8756-833fbc0a4569">
+>
+> <img width="477" alt="Screenshot 2024-06-05 at 12 13 05 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/bb8c88bd-75e0-44c2-bc10-037219b75903">
+>
+><img width="448" alt="Screenshot 2024-06-05 at 12 13 25 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/0413afa8-6e75-40ed-8371-c925d3e115f6">
+>
+><img width="480" alt="Screenshot 2024-06-05 at 12 13 40 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/716e5636-20b0-447b-b8aa-4ece47f020b2">
+
+
+
  
