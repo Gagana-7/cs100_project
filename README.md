@@ -1,4 +1,4 @@
-# RANGBOT
+<img width="1187" alt="Screenshot 2024-06-04 at 9 24 36 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/75d3942e-6640-4c6b-95fa-33472d05b4af"># RANGBOT
  
  Authors: Arnav Subramanian, Nikhil Rao, Roman Javadyan, Gagana Warusawithana
 Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https://github.com/nrao017)> ,<[Roman Javadyan](https://github.com/rjava005)>, <[Gagana Warusawithana](https://github.com/gwaru001)> 
@@ -217,27 +217,27 @@ Below is the description for all the functions of the UML diagram we start off w
 > 
 > To start off we see that our system already has previous tasks that were created from the last time the program was ran. This shows that the tasks save when the program stops and load up when program starts.
 >
-> We first output the tasks based on their priority with the most important (1) on top down to the least important (5) on the bottom. This shows us that our display by priority options works.
+> We first output the tasks based on their priority with the most important (1) on top down to the least important (5) on the bottom. This shows us that our display by priority function/option works.
 > 
 ><img width="682" alt="Screenshot 2024-06-04 at 7 24 57 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/32cbe34e-58c0-4951-a797-075fe2e9b855">
 >
-> We then output the tasks with the most recent deadline on top and the furthest deadline on the bottom. This shows that our display by deadline functions works.
+> We then output the tasks with the most recent deadline on top and the furthest deadline on the bottom. This shows that our display by deadline function/option works.
 > 
 > <img width="420" alt="Screenshot 2024-06-04 at 7 25 36 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/ee0d5761-ca21-4d41-bbc3-42772416b320">
 >
-> After we display wiht both priority and deadline we then start to edit the function. Once we are in edit we mark the task "Do project" as completed. This changes the marked as completed section from 0 (false) to 1 (true) if it works. Once the mark as task button is clicked (through typing 7) the task is automatically marked. This shows us that our edit options wor.s
+> After we display wiht both priority and deadline we then start to edit the function. Once we are in edit we mark the task "Do project" as completed. This changes the marked as completed section from 0 (false) to 1 (true) if it works. Once the mark as task button is clicked (through typing 7) the task is automatically marked. This shows us that our edit function/option works.
 > 
 > <img width="293" alt="Screenshot 2024-06-04 at 7 38 30 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/4b664957-d64f-402e-a892-3171aa539fa9">
 >
-> We then output by priority once again and see that "Do project" has been changed from 0 (false) to 1 (true).
+> We then output by priority once again and see that "Do project" has been changed from 0 (false) to 1 (true). This shows that our mark as complete function/option works
 >
 <img width="363" alt="Screenshot 2024-06-04 at 7 38 58 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/b41acdee-a399-4f3a-84b9-f0e572165384">
 
-> We then go to our delete Task option and see that there are two option: "delete by name" and "delete all marked completed". In this case we click "delete all marked completed" and we see that the task as been officially deleted. This shows us that our delete task and edit task options work.
+> We then go to our delete Task option and see that there are two option: "delete by name" and "delete all marked completed". In this case we click "delete all marked completed" and we see that the task as been officially deleted. This shows us that our delete task function/option and edit task function/option works.
 >
 ><img width="424" alt="Screenshot 2024-06-04 at 7 50 39 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/9f1a5407-91f8-4652-8869-6acd27717233">
 >
-> We then check to see if the task has been deleted and officially see that it has been deleted when we display by deadline. Shows display by deadline work and shows delete when marked as completed works.
+> We then check to see if the task has been deleted and officially see that it has been deleted when we display by deadline. This shows us our display by deadline function/option works and shows delete when marked as completed function/option works.
 >
 > <img width="314" alt="Screenshot 2024-06-04 at 8 05 57 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/e32b9f00-0853-44ba-bca8-f56fe7793c9d">
 >
@@ -263,9 +263,13 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 > <img width="334" alt="Screenshot 2024-06-04 at 9 15 39 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/37084035-6393-4fbc-b7e5-fdc189632912">
 >
-> Finally, after all the options have been edited we output to see that the task has been completely changed. This shows that our edit function completely works.
+> After all the options have been edited we output to see that the task has been completely changed. This shows that our edit function completely works.
 >
 > <img width="352" alt="Screenshot 2024-06-04 at 9 15 10 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/47b6ed5b-f1c2-40ce-90b4-aa323a0133c2">
+>
+> Finally we close the program with the quit function/option and get a nice message. We then load up the program again to show the autosave function and see that the program still has the tasks saved. This shows that our quit function/option and our auto save function/option both work.
+>
+> <img width="1187" alt="Screenshot 2024-06-04 at 9 24 36 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/914fe021-1f4a-4b6c-aa2f-ac9804ec763b">
 >
 >These are all the input and output screenshots for our program.
 
