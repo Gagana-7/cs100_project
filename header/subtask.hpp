@@ -6,7 +6,8 @@
 using namespace std;
 
 class subTask : Task {
-    vector<Task> createListTasks(vector<Task>& tasks, string label);
+    public: 
+        vector<Task> createListTasks(vector<Task>& tasks, string label);
 };
 
 
