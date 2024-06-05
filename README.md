@@ -281,9 +281,21 @@ Below is the description for all the functions of the UML diagram we start off w
  > Instructions on installing and running your application
 > 
 > In order to run this application the github repository must be cloned
-        (command: git clone --recursive <https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005.git>). After the repo has been cloned use file path to open an integrated terminal in the src folder.
+        (command: git clone --recursive <https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005.git>). 
 >
-> After the intergrated terminal has been opened run the following command statements:
+>In order to run the tests: After cloning the repository
+> 
+> Step 1: Run cmake.
+> 
+> Step 2: make
+> 
+> Step 3: ./bin/runAllTests
+>
+> <img width="966" alt="Screenshot 2024-06-05 at 12 47 44 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/e285b007-27be-46ce-817a-d8318903d435">
+>
+> In order to run the program: 
+>
+>After the repo has been cloned use file path to open an integrated terminal in the src folder.After the intergrated terminal has been opened run the following command statements:
 >
 >g++ main.cpp driverTask.cpp task.cpp editTask.cpp deleteTask.cpp createTask.cpp taskFile.cpp TaskDisplay.cpp PrioritysortTask.cpp DeadlineSortTask.cpp
 >
@@ -304,6 +316,19 @@ Below is the description for all the functions of the UML diagram we start off w
 ><img width="448" alt="Screenshot 2024-06-05 at 12 13 25 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/0413afa8-6e75-40ed-8371-c925d3e115f6">
 >
 ><img width="480" alt="Screenshot 2024-06-05 at 12 13 40 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/716e5636-20b0-447b-b8aa-4ece47f020b2">
+>
+> We also checked memory allocation through valgrind and got no memory leaks with full memory allocation. For the tests and for the Program
+>
+> Tests executable (run cmake. make, and ./bin/runAllTests):
+>
+><img width="1175" alt="Screenshot 2024-06-05 at 12 33 32 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/c72a9f99-dcf6-41da-b3e1-cebd8ce15f02">
+>
+>Program executable (run ./a.out):
+>
+><img width="553" alt="Screenshot 2024-06-05 at 12 41 16 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/8472434d-f580-4573-ba4f-0d01d579ca51">
+
+
+
 
 
 
