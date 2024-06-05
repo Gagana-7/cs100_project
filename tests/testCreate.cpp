@@ -7,8 +7,9 @@ TEST(TestCreateTask, TestEmptyConstructorName) {
 }
 
 TEST(TestCreateTask, TestContructorName) {
-    CreateTask creator("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
-    EXPECT_EQ(creator.getName(), "Make create tests");
+    CreateTask creator;
+    Task testTask = creator.CreateTasks("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
+    EXPECT_EQ(testTask.getName(), "Make create tests");
 }
 
 TEST(TestCreateTask, TestEmptyConstructorPriority) {
@@ -17,8 +18,9 @@ TEST(TestCreateTask, TestEmptyConstructorPriority) {
 }
 
 TEST(TestCreateTask, TestContructorPriority) {
-    CreateTask creator("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
-    EXPECT_EQ(creator.getPriority(), 2);
+    CreateTask creator;
+    Task testTask = creator.CreateTasks("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
+    EXPECT_EQ(testTask.getPriority(), 2);
 }
 
 TEST(TestCreateTask, TestEmptyConstructorDeadline) {
@@ -27,8 +29,9 @@ TEST(TestCreateTask, TestEmptyConstructorDeadline) {
 }
 
 TEST(TestCreateTask, TestContructorDeadline) {
-    CreateTask creator("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
-    EXPECT_EQ(creator.getDeadline(), "06/06/2024");
+    CreateTask creator;
+    Task testTask = creator.CreateTasks("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
+    EXPECT_EQ(testTask.getDeadline(), "06/06/2024");
 }
 
 TEST(TestCreateTask, TestEmptyConstructorDescription) {
@@ -37,8 +40,9 @@ TEST(TestCreateTask, TestEmptyConstructorDescription) {
 }
 
 TEST(TestCreateTask, TestContructorDescription) {
-    CreateTask creator("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
-    EXPECT_EQ(creator.getName(), "Make gtests for the createTask file");
+    CreateTask creator;
+    Task testTask = creator.CreateTasks("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
+    EXPECT_EQ(testTask.getDescription(), "Make gtests for the createTask file");
 }
 
 TEST(TestCreateTask, TestEmptyConstructorDuration) {
@@ -47,8 +51,9 @@ TEST(TestCreateTask, TestEmptyConstructorDuration) {
 }
 
 TEST(TestCreateTask, TestContructorDuration) {
-    CreateTask creator("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
-    EXPECT_EQ(creator.getDuration(), 40.0);
+    CreateTask creator;
+    Task testTask = creator.CreateTasks("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
+    EXPECT_EQ(testTask.getDuration(), 40.0);
 }
 
 TEST(TestCreateTask, TestEmptyConstructorLabel) {
@@ -56,7 +61,8 @@ TEST(TestCreateTask, TestEmptyConstructorLabel) {
     EXPECT_EQ(creator.getLabel(), "No label");
 }
 
-TEST(TestCreateTask, TestContructorPriority) {
-    CreateTask creator("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
-    EXPECT_EQ(creator.getLabel(), "School");
+TEST(TestCreateTask, TestContructorLabel) {
+    CreateTask creator;
+    Task testTask = creator.CreateTasks("Make create tests", 2, "06/06/2024", "Make gtests for the createTask file", 40.0, "School");
+    EXPECT_EQ(testTask.getLabel(), "School");
 }
