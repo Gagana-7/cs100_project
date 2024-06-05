@@ -1,4 +1,4 @@
-<img width="1187" alt="Screenshot 2024-06-04 at 9 24 36 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/75d3942e-6640-4c6b-95fa-33472d05b4af"># RANGBOT
+RANGBOT
  
  Authors: Arnav Subramanian, Nikhil Rao, Roman Javadyan, Gagana Warusawithana
 Authors: <[Arnav Subramanian](https://github.com/asubr014)>, <[Nikhil Rao](https://github.com/nrao017)> ,<[Roman Javadyan](https://github.com/rjava005)>, <[Gagana Warusawithana](https://github.com/gwaru001)> 
