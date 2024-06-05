@@ -217,6 +217,19 @@ Below is the description for all the functions of the UML diagram we start off w
  > Screenshots of the input/output after running your application
  ## Installation/Usage
  > Instructions on installing and running your application
+> In order to run this application the github repository must be cloned
+        (command: git clone --recursive <https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005.git>). After the repo has been cloned use file path to open an integrated terminal in the src folder.
+>
+> After the intergrated terminal has been opened run the following command statements:
+>
+>g++ main.cpp driverTask.cpp task.cpp editTask.cpp deleteTask.cpp createTask.cpp taskFile.cpp TaskDisplay.cpp PrioritysortTask.cpp DeadlineSortTask.cpp
+>
+> ./a.out
+>
+>Then the application will begin to run
+> <img width="1056" alt="Screenshot 2024-06-04 at 7 18 46 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/d6372d52-8f2c-4110-b3db-460ff2835466">
+
+
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
