@@ -340,11 +340,10 @@ Below is the description for all the functions of the UML diagram we start off w
 ><img width="539" alt="Screenshot 2024-06-06 at 10 39 40 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/9306fd4e-5351-4b94-b122-12cf631be5d9">
 
 >
-> We ran these tests through gcov and lcov.
+> We ran these tests through gcov and lcov. The reason we don't have 100% of driverTask.cpp is because it is detecting the deafault cases in switch, which are needed in case the user inputs an option not present.
 >
 ><img width="1418" alt="Screenshot 2024-06-06 at 10 20 53 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/d4bf6812-45c3-41c0-bb3c-0e1ac290443f">
 >
-> The reason we don't have 100% of driverTask.cpp is because it is detecting the deafault cases in switch, which are needed in case the user inputs an option not present.
 
 
 
