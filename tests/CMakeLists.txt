@@ -13,6 +13,7 @@ add_executable(runAllTests
   testPriority.cpp
   testTask.cpp
   testTaskFile.cpp
+  testSubtask.cpp
 )
 
 target_link_libraries(runAllTests gmock gtest gtest_main)

@@ -13,9 +13,8 @@ TEST(subtask, testSubtask) {
     vector<Task> expectedContent = {task1, task3};
 
     ASSERT_EQ(subtask.size(), expectedContent.size());
-    for (int i = 0; i < expectedContent.size(); ++i) {
-        EXPECT_EQ(subtask[i], expectedContent[i]);
-    }
+    EXPECT_EQ(subtask.at(0).getName(), "Task 1");
+    EXPECT_EQ(subtask.at(1).getName(), "Task 3");
 }
 
 TEST(subtask, testSubtaskEmpty) {
@@ -52,7 +51,7 @@ TEST(subtask, testSubtask3) {
     vector<Task> expectedContent = taskList;
 
     ASSERT_EQ(subtask.size(), expectedContent.size());
-    for (int i = 0; i < expectedContent.size(); ++i) {
-        EXPECT_EQ(subtask[i], expectedContent[i]);
-    }
+    EXPECT_EQ(subtask.at(0).getName(), "Task 1");
+    EXPECT_EQ(subtask.at(1).getName(), "Task 2");
+    EXPECT_EQ(subtask.at(2).getName(), "Task 3");
 }

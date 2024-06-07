@@ -10,6 +10,7 @@ add_library(simpleLibrary
   TaskDisplay.cpp 
   PrioritysortTask.cpp 
   DeadlineSortTask.cpp
+  subtask.cpp
 )
 
 find_library(M_SRC m)
