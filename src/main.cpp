@@ -223,9 +223,19 @@ int main() {
             cout << "Choose which way to sort your tasks" << endl;
             cout << "Enter 1: Priority" << endl;
             cout << "Enter 2: Deadline" << endl;
+            cout << "Enter 3: Subtasks" << endl;
             inputValidation(choice);
             cin.ignore();
-            driver.displayTasks(taskList, choice);
+            if (choice == 3) {
+                string subtaskChoice;
+                cout << "Choose a label: " << endl;
+                getline(cin, subtaskChoice);
+                cout << endl;
+                driver.displaySubtasks(taskList, subtaskChoice);
+            } else {
+                driver.displayTasks(taskList, choice);
+            }
+            
         }
         else if (user_choice == 5) {
             //save file manually

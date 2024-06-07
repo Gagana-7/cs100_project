@@ -9,6 +9,7 @@
 #include "taskFile.hpp"
 #include "PrioritysortTask.hpp"
 #include "DeadlineSortTask.hpp"
+#include "subtask.hpp"
 
 #include <iostream>
 using namespace std;
@@ -25,6 +26,7 @@ class DriverTask {
         void saveFileDriver(const string &fileName, const vector<Task> &taskList);
         void loadFileDriver(const string &fileName, vector<Task> &taskList);
         void displayTasks(vector<Task> &taskList, int choice);
+        void displaySubtasks(vector<Task> &taskList, string label);
 };
 
 #endif //DRIVERTASK_HPP
