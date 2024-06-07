@@ -48,8 +48,15 @@ For the screen layout we decided to create different displays based on the secti
 ---nameofdisplay--. As of now we assume that the words will be formed with a proper background of our choosing. As of now the layout of our program is undecided but will most likely follow the idea of text on top of a background that is engaging and user friendly. Display task starts of by asking the user to choose a particular sorting method, deadline or priority. Then the tasks are displayed in the user that the order chooses. The create task display asks the user to input information such as title, deadline, priority, and description (of the task if need). The delete task option simply asks the user for the name of the task meant to be deleted and deletes the task automatically once the name is entered. Finally, the quit function ouputs a message reminding the to complete their tasks. As of now the quit function can be left, but as a group we do want to change it to something more enticing which we will figure out through the proccess. 
 
 ## Class Diagram (UML)
-
+>
+>OLD UML
+>>
 > <img width="536" alt="Screenshot_2024-05-03_at_12 28 26_PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/65ed6716-da77-41f4-ace7-5854a7283055">
+>
+> 
+> NEW UML!!!
+>
+> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/8425f508-3126-4a36-acb0-88a44030ffa0)
 
 Below is the description for all the functions of the UML diagram we start off with the task class which is the biggest class with most of the variables under. From here, all the other functions such as sort, display, edit, are children of the task class and inherit the function from the parent class as well. In each of these children classes we will override the parent task class function definitions as we see fit, however as of now we are not sure which functions will need the override and which ones would not. 
 
