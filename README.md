@@ -292,7 +292,8 @@ Below is the description for all the functions of the UML diagram we start off w
 > 
 > Step 3: ./bin/runAllTests
 >
-> <img width="966" alt="Screenshot 2024-06-05 at 12 47 44 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/e285b007-27be-46ce-817a-d8318903d435">
+><img width="1078" alt="Screenshot 2024-06-06 at 8 15 47 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/5fed4ff6-71da-4588-8d99-3f94ee9c1e53">
+
 >
 > In order to run the program: 
 >
@@ -303,7 +304,8 @@ Below is the description for all the functions of the UML diagram we start off w
 > ./a.out
 >
 >Then the application will begin to run
-> <img width="1056" alt="Screenshot 2024-06-04 at 7 18 46 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/d6372d52-8f2c-4110-b3db-460ff2835466">
+><img width="1097" alt="Screenshot 2024-06-06 at 8 19 51 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/6797d991-82ae-4a1b-80fb-3f68ad1f2407">
+
 
 
  ## Testing
