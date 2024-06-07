@@ -97,3 +97,23 @@ void DriverTask::displayTasks(vector<Task> &taskList, int choice){
            break;
        }
 }
+
+void DriverTask::displaySubtasks(vector<Task> &taskList, string label) {
+    subTask subtask1;
+    vector<Task> subtasks = subtask1.createListTasks(taskList, label);
+    if (subtasks.empty()) {
+        cout << "There are no subtasks with that label" << endl;
+    } else {
+        for (int i = 0; i < subtasks.size(); i++){
+            cout << "Name: " << subtasks.at(i).getName() << endl;
+            cout << "Priority: " << subtasks.at(i).getPriority() << endl;
+            cout << "Deadline: " << subtasks.at(i).getDeadline() << endl;
+            cout << "Description: " << subtasks.at(i).getDescription() << endl;
+            cout << "Duration: " << subtasks.at(i).getDuration() << endl;
+            cout << "Label: " << subtasks.at(i).getLabel() << endl;
+            cout << "Is completed: " << subtasks.at(i).getCompleted() << endl;
+            cout << endl;
+        }
+    }
+    
+}

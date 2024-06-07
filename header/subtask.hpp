@@ -2,7 +2,7 @@
 #define SUBTASK_HPP
 
 #include "task.hpp"
-
+#include <vector>
 using namespace std;
 
 class subTask : Task {
