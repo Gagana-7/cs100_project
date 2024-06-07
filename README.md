@@ -207,9 +207,9 @@ Below is the description for all the functions of the UML diagram we start off w
  
  > ## Final deliverable
 >
->Class UML Diagram:
-
-> ![Untitled Diagram drawio (7)](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/cadb9f75-915b-41ab-97e1-9306fc0e375b)
+>Class UML Diagram: Same as Phase III just added for reference
+>
+> ![image](https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/8425f508-3126-4a36-acb0-88a44030ffa0)
  >
  ## Screenshots
 > 
