@@ -269,6 +269,10 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 > <img width="1187" alt="Screenshot 2024-06-04 at 9 24 36 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/914fe021-1f4a-4b6c-aa2f-ac9804ec763b">
 >
+> We also added a subtask part of display and we have made it functioning below. As we see there are two tasks saved and when we run subtask and state the subtask we want to run (i.e school) we can see that only the tasks with label schools show up.
+>
+> <img width="306" alt="Screenshot 2024-06-06 at 8 13 51 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/066ff448-5c28-4117-9340-ad0639d74af1">
+>
 >These are all the input and output screenshots for our program.
 
 
@@ -319,6 +323,7 @@ Below is the description for all the functions of the UML diagram we start off w
 ><img width="491" alt="Screenshot 2024-06-06 at 8 03 06 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/a8b32343-b9fd-4e1a-a7cb-cf0acbe13242">
 >
 > We also checked memory allocation through valgrind and got no memory leaks with full memory allocation. For the tests and for the Program
+>Run (valgrind --leak-check=full \<executable\>)
 >
 > Tests executable (run cmake. make, and ./bin/runAllTests):
 >
@@ -327,7 +332,8 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 >Program executable (run ./a.out):
 >
-><img width="553" alt="Screenshot 2024-06-05 at 12 41 16 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/8472434d-f580-4573-ba4f-0d01d579ca51">
+><img width="489" alt="Screenshot 2024-06-06 at 8 08 44 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/a92d0e41-e5c4-4a5a-9b93-a4671e9f29f9">
+
 
 
 
