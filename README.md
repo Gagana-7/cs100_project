@@ -327,9 +327,10 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 ><img width="480" alt="Screenshot 2024-06-05 at 12 13 40 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/716e5636-20b0-447b-b8aa-4ece47f020b2">
 >
-> We added subtask and its tests
+> We added subtask and driver subtask tests
 >
-><img width="491" alt="Screenshot 2024-06-06 at 8 03 06 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/a8b32343-b9fd-4e1a-a7cb-cf0acbe13242">
+><img width="477" alt="Screenshot 2024-06-06 at 10 31 51 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/0f743887-a2b0-41d1-a7ff-4e7273c0f8f7">
+>
 >
 > We also checked memory allocation through valgrind and got no memory leaks with full memory allocation. For the tests and for the Program
 >Run (valgrind --leak-check=full \<executable\>)
