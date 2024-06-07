@@ -33,8 +33,8 @@ TEST(taskFile, testReadFileEmpty) {
 }
 
 TEST(taskFile, testReadFile) {
-    Task task1("Task 1", 1, "2024-06-01", "Description 1", 1.0, "Label 1");
-    Task task2("Task 2", 2, "2024-06-02", "Description 2", 2.0, "Label 2");
+    Task task1("Task 1", 1, "06/01/2024", "Description 1", 1.0, "Label 1");
+    Task task2("Task 2", 2, "06/02/2024", "Description 2", 2.0, "Label 2");
     vector<Task> taskList = {task1, task2};
     taskFile file;
     file.setFileName("testFile.txt");
