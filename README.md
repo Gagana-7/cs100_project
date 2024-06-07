@@ -302,9 +302,11 @@ Below is the description for all the functions of the UML diagram we start off w
 ><img width="1078" alt="Screenshot 2024-06-06 at 8 15 47 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/5fed4ff6-71da-4588-8d99-3f94ee9c1e53">
 
 >
-> In order to run the program: 
+> In order to run the program:
 >
->After the repo has been cloned use file path to open an integrated terminal in the src folder.After the intergrated terminal has been opened run the following command statements (Alternatively you can also manually download the folder and upload it to your own IDE and run it):
+> First Choice: After repo cloned,Navigate to src and run ./bin/main
+>
+>Second choice: After the repo has been cloned use file path to open an integrated terminal in the src folder.After the intergrated terminal has been opened run the following command statements (Alternatively you can also manually download the folder and upload it to your own IDE and run it):
 > 
 >g++ main.cpp driverTask.cpp task.cpp editTask.cpp deleteTask.cpp createTask.cpp taskFile.cpp TaskDisplay.cpp PrioritysortTask.cpp DeadlineSortTask.cpp subtask.cpp
 >
@@ -337,12 +339,13 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 > Tests executable (run cmake. make, and ./bin/runAllTests):
 >
-><img width="617" alt="Screenshot 2024-06-06 at 8 03 14 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/f34546be-7c43-4ee2-997a-b8c847fef171">
+><img width="595" alt="Screenshot 2024-06-06 at 10 37 24 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/b9ad6cc1-5677-4d2d-b678-4b366cbd5c50">
+>
+>
+>Program executable (run g++ command then "./a.out" or simply run  "./bin/main"):
+>
+><img width="539" alt="Screenshot 2024-06-06 at 10 39 40 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/9306fd4e-5351-4b94-b122-12cf631be5d9">
 
->
->Program executable (run ./a.out):
->
-><img width="489" alt="Screenshot 2024-06-06 at 8 08 44 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/a92d0e41-e5c4-4a5a-9b93-a4671e9f29f9">
 >
 > We ran these tests through gcov and lcov.
 >
