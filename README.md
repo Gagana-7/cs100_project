@@ -294,7 +294,7 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 >After the repo has been cloned use file path to open an integrated terminal in the src folder.After the intergrated terminal has been opened run the following command statements (Alternatively you can also manually download the folder and upload it to your own IDE and run it):
 > 
->g++ main.cpp driverTask.cpp task.cpp editTask.cpp deleteTask.cpp createTask.cpp taskFile.cpp TaskDisplay.cpp PrioritysortTask.cpp DeadlineSortTask.cpp
+>g++ main.cpp driverTask.cpp task.cpp editTask.cpp deleteTask.cpp createTask.cpp taskFile.cpp TaskDisplay.cpp PrioritysortTask.cpp DeadlineSortTask.cpp subtask.cpp
 >
 > ./a.out
 >
@@ -314,11 +314,16 @@ Below is the description for all the functions of the UML diagram we start off w
 >
 ><img width="480" alt="Screenshot 2024-06-05 at 12 13 40 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/716e5636-20b0-447b-b8aa-4ece47f020b2">
 >
+> We added subtask and its tests
+>
+><img width="491" alt="Screenshot 2024-06-06 at 8 03 06 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/a8b32343-b9fd-4e1a-a7cb-cf0acbe13242">
+>
 > We also checked memory allocation through valgrind and got no memory leaks with full memory allocation. For the tests and for the Program
 >
 > Tests executable (run cmake. make, and ./bin/runAllTests):
 >
-><img width="1175" alt="Screenshot 2024-06-05 at 12 33 32 AM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/126820928/c72a9f99-dcf6-41da-b3e1-cebd8ce15f02">
+><img width="617" alt="Screenshot 2024-06-06 at 8 03 14 PM" src="https://github.com/cs100/final-project-asubr014-nrao017-gwaru001-rjava005/assets/165944309/f34546be-7c43-4ee2-997a-b8c847fef171">
+
 >
 >Program executable (run ./a.out):
 >
