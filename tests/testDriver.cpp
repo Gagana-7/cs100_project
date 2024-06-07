@@ -142,3 +142,17 @@ TEST(TestDriverTask, TestDisplayDriverDeadline) {
     driver.displayTasks(taskList, 2);
     EXPECT_EQ(taskList[0].getName(), "Exercise");
 }
+
+TEST(TestDriverTask, TestDisplaySubtaskDriver) {
+    vector<Task> taskList;
+    DriverTask driver;
+    Task testTask1("Study for finals", 2, "06/06/2024", "Look over study guides", 300.0, "School");
+    Task testTask2("Complete chores", 4, "06/11/2024", "Finish cleaning the house", 50.0, "Home");
+    Task testTask3("Exercise", 3, "06/05/2024", "Go to the gym", 60.0, "Home");
+    taskList.push_back(testTask1);
+    taskList.push_back(testTask2);
+    taskList.push_back(testTask3);
+
+    driver.displaySubtasks(taskList, "School");
+    EXPECT_EQ(taskList[0].getName(), "Study for finals");
+}

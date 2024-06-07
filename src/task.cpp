@@ -28,10 +28,6 @@ void Task::setCompleted(bool completed) {
     this->completed = completed;
 }
 
-void Task::addTask(const Task& newTask) { 
-    taskList.push_back(newTask);
-}
-
 string Task::getName() const {
     return name;
 }
@@ -54,10 +50,6 @@ double Task::getDuration() const {
 
 string Task::getLabel() const {
     return label;
-}
-
-const vector<Task>& Task::getTaskList() const {
-    return taskList;
 }
 
 bool Task::getCompleted() const {
